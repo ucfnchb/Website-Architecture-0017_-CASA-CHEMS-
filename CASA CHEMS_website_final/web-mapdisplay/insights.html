@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tree Benefits</title>
+  <link rel="stylesheet" type="text/css" href="./css/stylestest.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+  <ul class="topbar">
+    <li style="float:left"><a class="lia" href="#Lnading" style="font-size: 22px;"> <strong> UCL CASA CHEMS-London Tree Canopy</strong></a></li>
+    <li style="float:right" class="dropdown">
+      <a class="lia" href="javascript:void(0)" class="dropbtn"><i class="fa fa-bars"></i></a>
+      <div class="dropdown-content">
+        <a class="lia" href="Map page.html">Map</a>
+        <a class="lia" href="#">Insights</a>
+      </div>
+    </li>
+    <li class="Topbutton" style="float:right"><a href=""><img class="topbtnimg" src="images/Insightsbtn.png" alt=""></a></li>
+    <li class="Topbutton" style="float:right"><a href="Map page.html"><img class="topbtnimg" src="images/Mapbtm.png" alt=""></a></li>
+  </ul>
+
+  <!-- insight page header banner -->
+  <header>
+    <div class="intro-header">
+      <h1>Raising Awareness for London's Tree Canopy</h1>
+      <p>Fostering action for a greener future</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="main">
+      <div class="left-box">
+        <!-- tree benefits section  -->
+        <h2>Benefits of Trees</h2>
+        <br>
+        <ul>
+          <li id="Benefit1">Improved Air Quality</li>
+          <li id="Benefit2">Climate Regulation</li>
+          <li id="Benefit3">Noise Reduction</li>
+          <li id="Benefit4">Improved Mental Health</li>
+          <li id="Benefit5">Biodiversity and Wildlife Habitat</li>
+        </ul>
+        <!-- detailed benefits intruction section display when reader click on readmore button  -->
+        <div id="introduction">
+          <h2>Benefits of Trees in Urban Areas</h2>
+          <p><strong>1. Improved Air Quality:</strong> Trees act as natural air filters, absorbing pollutants and releasing oxygen, helping to reduce air pollution and improve the overall air quality in urban areas.</p>
+          <p><strong>2. Climate Regulation:</strong> Trees provide shade, reducing the urban heat island effect and helping to regulate temperatures, leading to a more comfortable living environment and reducing the need for excessive air conditioning.</p>
+          <p><strong>3. Noise Reduction:</strong> Trees can help to absorb and block out noise, creating a quieter and more peaceful urban environment, particularly beneficial for residents living near busy roads or in densely populated areas.</p>
+          <p><strong>4. Improved Mental Health:</strong> Spending time in green spaces with trees has been shown to reduce stress and improve mental well-being. Trees provide a sense of tranquility and connection with nature, positively impacting urban residents' overall quality of life.</p>
+          <p><strong>5. Biodiversity and Wildlife Habitat:</strong> Trees provide habitats for various wildlife species, contributing to urban biodiversity. Promoting the importance of trees can encourage the preservation of these habitats and support urban wildlife conservation efforts.</p>
+        </div>
+      <!-- readmore function   -->
+        <button id="readMoreButton">Read More</button>
+      
+        <script>
+          
+          const introduction = document.getElementById('introduction');
+          const readMoreButton = document.getElementById('readMoreButton');
+      
+          readMoreButton.addEventListener('click', function() {
+            if (introduction.style.display === 'none') {
+              introduction.style.display = 'block';
+              readMoreButton.textContent = 'Read Less';
+            } else {
+              introduction.style.display = 'none';
+              readMoreButton.textContent = 'Read More';
+            }
+          });
+        </script>
+
+        <!-- benefits summary image -->
+        <div class="diagram">
+          <img src="images/benefits of trees.png" alt="Tree Benefits Diagram">
+        </div>
+      </div>
+
+
+       <!-- tree impacts and why it matters section  -->
+      <div class="impact-why-matters">
+        <h2>Why it matters</h2>
+        <br>
+        <p>Tree canopy plays a vital role in enhancing urban environments and contributing to the well-being of cities and their residents. It serves as a critical link between the natural and built environments, seamlessly integrating the benefits of nature into the urban fabric.</p>
+
+<br><br>
+<!-- tree impacts detailed introduction -->
+        <div id="introduction2">
+          <h2>Environment Social Economic benefits</h2>
+          <p><strong>1. Environment:</strong> Conserve energy by decreasing the heating and cooling needs of homes, helping reduce climate change. Remove pollution via foliage and their stomata. Intercept rain and minimize the volume of run-off in storm conditions, which helps alleviate pressure on drainage systems. Can minimize noise. Provide a vital biological habitat for wildlife in urban areas.</p>
+          <p><strong>2. Social:</strong> Trees can create desirable environments and increase amenity value.Reduce recovery times after illness and operations for patients living in areas that have large numbers of trees; they can also reduce stress levels. Psychologically, provide an important connection between city dwellers and the natural environment, which can reduce stress levels.</p>
+          <p><strong>3. Economic:</strong> Trees can reduce heating and cooling costs around a property by providing shelter and shade. Improve the health of the population by reducing health care cost and reduce recovery times after illness or operation. Can raise property values, up to 7-15% higher in areas with high canopy cover than those in areas of low canopy cover.</p>
+          <div class="diagram">
+            <img src="images/Tree-Planting-Banner.webp" alt="Tree Benefits Diagram">
+          </div>
+        </div>
+      
+       
+    </section>
+<!-- case study section -->
+    <section class="case-study">
+      <h2 class="case-study-title">Case Study: The Impact of Trees on Urban Areas</h2>
+      <div class="case-study-content">
+        <div class="case-study-info">
+          <p><strong>Location:</strong> Camden, London, United Kingdom</p>
+          <p><strong>Challenges Faced:</strong> Camden formally declared a climate and ecological emergency in October 2019.</p>
+          <p><strong>Description:</strong> The neighborhood wants more tree planting to alleviate the global climate and ecological crises. The council's policy targets tree planting in regions where canopy cover will benefit inhabitants most to maximize resources. Since public land cannot reach this target, the council encourages private households, businesses, and developments to plant trees.</p>
+          <!-- testimonials where reader can be direct to the webpage of the news -->
+          <p><strong>Testimonials:</strong> <br><a href="https://www.forestryjournal.co.uk/news/23186215.direct-link-happiness-tree-cover-london/"> <br> Direct link between happiness and tree cover in London</a> <br>London's happiest borough is also one of its greenest,with new research suggesting there is a direct correlation between the two. <br> <br><a href="https://worldhappiness.report/ed/2020/how-environmental-quality-affects-our-happiness/">How Environmental Quality Affects Our Happiness</a> <br> Green spaces are beneficial for nearby residents. There is an established evidence base documenting the positive effects of green spaces on residents' health.</p>
+        </div>
+        <div class="case-study-goals">
+          <p><strong>Goals and Actions:</strong></p>
+          <br>
+          <img src="images/camden tree strategy.png" alt="Case Study Image" class="case-study-image">
+        </div>
+      </div>
+      
+    </section>
+    
+    
+
+    <!-- reference section where allow reader to download the reference article -->
+
+    <section class="references">
+      <h2>References</h2>
+      <ul>
+        <br>
+        <li><a href="https://www.camden.gov.uk/documents/20142/5268201/Camden+Tree+Planting+Strategy.pdf" download>Camden Tree Planting Strategy</a></li>
+        <br>
+      
+        <li><a href="Articles/HappinessGrowsOnTrees.pdf" download>Happiness grows on trees</a></li>
+        <br>
+
+        <li><a href="Articles/Trees Report Fina.pdf" download>Why we need more trees in the UK</a></li>
+        <br>
+      </ul>
+    </section>
+  </main>
+<!-- contact section-->
+  <footer>
+    <h3>Contact Us</h3>
+    <p>Email: casa-team-chems@ucl.ac.uk</p>
+    <p>Phone: 123-456-7890</p>
+  </footer>
+</body>
+</html>
