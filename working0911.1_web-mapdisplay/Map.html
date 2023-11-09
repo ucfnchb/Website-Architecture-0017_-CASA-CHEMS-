@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+ <title> Map Page </title>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="./css/Map.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+ <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+ <script src='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js'></script>
+ <link href='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css' rel='stylesheet' />
+ <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js'></script>
+ <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css' type='text/css' />
+ <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.0/dist/echarts.min.js"></script>
+ <script charset="utf-8" src="https://d3js.org/d3.v7.min.js"></script>
+ <script src="https://unpkg.com/deck.gl@latest/dist.min.js"></script>
+
+</head>
+<body>
+
+
+  <ul class="topbar">
+    <li style="float:left"><a href="#Lnading" style="font-size: 22px;">WebName</a></li>
+    <li style="float:right" class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn"><i class="fa fa-bars"></i></a>
+      <div class="dropdown-content">
+        <a href="#">Map</a>
+        <a href="#">Insights</a>
+      </div>
+    </li>
+    <li class="Topbutton" style="float:right"><img class="topbtmimg" src="img/Insightsbtn.png" alt=""></li>
+    <li class="Topbutton" style="float:right"><img class="topbtmimg" src="img/Mapbtm.png" alt=""></li>
+  </ul>
+
+  <div id="container">
+    <div id="map"></div>
+    <div id="popup"></div>
+    <ul class="sidebar">
+      <li class="sidebtn" style="float:right"><img id="hidebtn" src="img/listbutton2.png" alt="" onclick="displaybarcharts()"></li>
+      <li id="barchart111"><div id="barchart"></div></li>
+    </ul>
+    
+  </div>
+   
+
+  <!-- <div class="listbox">
+    <div class="listimgbox"><img class="listbutton1" src="img/listbutton1.png" alt=""></div>
+    <div id="listcontainer">
+    </div>
+  </div> -->
+
+
+
+  <script src="js/map.js"></script>
+</body>
+
+
+</html>
