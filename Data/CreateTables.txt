@@ -1,0 +1,75 @@
+CREATE TABLE `mdb`.`ward_geo_json_attributes` (
+  `OBJECTID` INT NOT NULL,
+  `country` VARCHAR(45) NULL,
+  `wardcode` VARCHAR(10) NULL,
+  `wardname` VARCHAR(100) NULL,
+  `designated` VARCHAR(45) NULL,
+  `status` VARCHAR(45) NULL,
+  `survyear` INT NULL,
+  `percancov` FLOAT NULL,
+  `standerr` FLOAT NULL,
+  `numpts` INT NULL,
+  `warea` FLOAT NULL,
+  PRIMARY KEY (`OBJECTID`),
+  UNIQUE INDEX `OBJECTID_UNIQUE` (`OBJECTID` ASC) VISIBLE);
+
+CREATE INDEX idx_wardcode ON ward_geo_json_attributes (wardcode);
+
+CREATE TABLE `mdb`.`ward_geo_json` (
+  `OBJECTID` INT NOT NULL,
+  `GEO_JSON` BLOB NULL,
+  PRIMARY KEY (`OBJECTID`),
+  UNIQUE INDEX `OBJECTID_UNIQUE` (`OBJECTID` ASC) VISIBLE);
+
+CREATE TABLE `mdb`.`ldn_wards` (
+  `ward_code` VARCHAR(9) NOT NULL,
+  `borough` VARCHAR(25) NULL,
+  `ward` VARCHAR(40) NULL,
+  PRIMARY KEY (`ward_code`),
+  UNIQUE INDEX `ward_code_UNIQUE` (`ward_code` ASC) VISIBLE)
+COMMENT = 'London ward names and codes from https://data.london.gov.uk/dataset/ward-profiles-and-atlas ward altas';
+
+CREATE TABLE `mdb`.`rcka_ward_codes` (
+  `wardcode` VARCHAR(10) NOT NULL,
+  `wardname` VARCHAR(50) NULL,
+  `borough` VARCHAR(50) NULL,
+  PRIMARY KEY (`wardcode`),
+  UNIQUE INDEX `wardcode_UNIQUE` (`wardcode` ASC) VISIBLE);
+
+'CREATE TABLE `arccanopydata` (
+  `lsoa_cd` varchar(10) DEFAULT NULL,
+  `lsoa_nm` varchar(100) DEFAULT NULL,
+  `lsoa_kmsq` float DEFAULT NULL,
+  `canopy_kmsq` float DEFAULT NULL,
+  `canopy_per` float DEFAULT NULL,
+  `la_cd` varchar(10) DEFAULT NULL,
+  `la_nm` varchar(50) DEFAULT NULL
+) 
+
+CREATE TABLE `mdb`.`green_ward_cover` (
+  `lb_name` VARCHAR(35) NULL,
+  `lb_code` VARCHAR(9) NULL,
+  `ward_code` VARCHAR(9) NOT NULL,
+  `ward_name` VARCHAR(50) NULL,
+  `ward_area_hectare` FLOAT NULL,
+  `green_area_hectare` FLOAT NULL,
+  `blue_area_hectare` FLOAT NULL,
+  `green_blue_area_hectare` FLOAT NULL,
+  `percent_green` FLOAT NULL,
+  `percent_blue` FLOAT NULL,
+  `percent_green_blue` FLOAT NULL,
+  PRIMARY KEY (`ward_code`),
+  UNIQUE INDEX `ward_code_UNIQUE` (`ward_code` ASC) VISIBLE);
+
+CREATE TABLE `mdb`.`public_open_space` (
+  `ward_code` VARCHAR(9) NOT NULL,
+  `old_ward_code` VARCHAR(6) NULL,
+  `ward` VARCHAR(45) NULL,
+  `borough_code` VARCHAR(9) NULL,
+  `borough` VARCHAR(30) NULL,
+  `perc_homes_good_access_to_nature` INT NULL,
+  `perc_homes_deficiency_of_access_to_nature` INT NULL,
+  PRIMARY KEY (`ward_code`),
+  UNIQUE INDEX `ward_code_UNIQUE` (`ward_code` ASC) VISIBLE)
+COMMENT = 'from: https://data.london.gov.uk/dataset/access-public-open-space-and-nature-ward';
+
