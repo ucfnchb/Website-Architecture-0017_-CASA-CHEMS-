@@ -124,20 +124,22 @@ displaychart.on('mouseover',function(params){
 ```
 ## Insight Page
 The Insights web page, designed to raise awareness about the importance of tree canopy coverage, features a detailed structure and design focusing on the environmental benefits of trees. Its primary sections include:
-•	Tree Benefits: Highlighting the numerous advantages trees offer, like air quality improvement and biodiversity enhancement. Interactive elements allow users to explore detailed information.
-•	Why it Matters: Discussing the critical role of tree canopy in urban areas, focusing on its multifaceted impacts.
-•	Case Study: Featuring a real-world example from Camden Borough, emphasizing the benefits of green spaces on mental health, supported by testimonials and links to external research.
-•	References: Providing credible sources for further exploration, with downloadable resources.
-•	Contact: Enabling user engagement and feedback.
+
+- Tree Benefits: Highlighting the numerous advantages trees offer, like air quality improvement and biodiversity enhancement. Interactive elements allow users to explore detailed information.
+- Why it Matters: Discussing the critical role of tree canopy in urban areas, focusing on its multifaceted impacts.
+- Case Study: Featuring a real-world example from Camden Borough, emphasizing the benefits of green spaces on mental health, supported by testimonials and links to external research.
+- References: Providing credible sources for further exploration, with downloadable resources.
+- contact: Enabling user engagement and feedback.
 
 Technically, insight page deployed: 
-•	Benefits Section: Lists tree benefits (like "Improved Air Quality") and provides a detailed explanation in a hidden div (<div id="introduction">), which becomes visible upon interaction.
-•	Interactive 'Read More' Button: JavaScript is used to toggle the visibility of the detailed benefits section. The readMoreButton.addEventListener script changes the text and display state of the detailed section upon clicking.
-•	Images: Images are included (<img src="...">) to visually support the content.
-•	Impact and Why It Matters Section: Further elaboration on the environmental, social, and economic benefits of trees, with another detailed section and an image.
-•	Case Study Section: Highlights a specific example in Camden, London, including challenges, descriptions, and goals, with links to external articles and an image.
-•	References Section: Offers downloadable resources and articles, enhancing the credibility and depth of information provided.
-•	Contact Section: In the footer, contact information is provided, enhancing user engagement and communication.
+
+- Benefits Section: Lists tree benefits (like "Improved Air Quality") and provides a detailed explanation in a hidden div (<div id="introduction">), which becomes visible upon interaction.
+- Interactive 'Read More' Button: JavaScript is used to toggle the visibility of the detailed benefits section. The readMoreButton.addEventListener script changes the text and display state of the detailed section upon clicking.
+- Images: Images are included (<img src="...">) to visually support the content.
+- Impact and Why It Matters Section: Further elaboration on the environmental, social, and economic benefits of trees, with another detailed section and an image.
+- Case Study Section: Highlights a specific example in Camden, London, including challenges, descriptions, and goals, with links to external articles and an image.
+- References Section: Offers downloadable resources and articles, enhancing the credibility and depth of information provided.
+- Contact Section: In the footer, contact information is provided, enhancing user engagement and communication.
 
 
 ### CSS style 
