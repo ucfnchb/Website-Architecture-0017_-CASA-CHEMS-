@@ -73,3 +73,6 @@ CREATE TABLE `mdb`.`public_open_space` (
   UNIQUE INDEX `ward_code_UNIQUE` (`ward_code` ASC) VISIBLE)
 COMMENT = 'from: https://data.london.gov.uk/dataset/access-public-open-space-and-nature-ward';
 
+
+create view warddata as 
+SELECT a.OBJECTID as 'OBJECTID', a.percancov, a.warea, a.survyear, a.wardcode as 'Wardcode', a.wardname as 'Wardname',  a.designated as 'Designated', a.status as 'Status',  a.survyear as 'Survey Year',  format(a.percancov,2) as 'Perc Coverage',  a.standerr as 'StandErr',   a.numpts as 'Numpts',  a.warea as 'Ward Area',   p.borough as Borough,  format(p.perc_homes_good_access_to_nature,2) as 'Homes w/ Nature Access',   format(g.blue_area_hectare,2) as 'Blue Hectares', format(g.green_blue_area_hectare,2) as 'Blue-Green Hectares',  format(g.green_area_hectare,2) as 'Green per Hectare', format(g.percent_blue,2) as "Perc Blue", format(g.percent_green,2) as "Perc Green",  format(g.percent_green_blue,2) as "Perc Blue-Green", format(g.ward_area_hectare,2) as "Ward Hectares", perc_homes_good_access_to_nature, perc_homes_deficiency_of_access_to_nature, blue_area_hectare, green_blue_area_hectare, green_area_hectare, percent_green, percent_green_blue, ward_area_hectare, percent_blue  FROM ward_geo_json_attributes as a  LEFT JOIN public_open_space as p ON a.wardcode = p.ward_code  LEFT JOIN green_ward_cover as g ON a.wardcode = g.ward_code
