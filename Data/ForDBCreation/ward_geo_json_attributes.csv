@@ -1,0 +1,648 @@
+"OBJECTID";"country";"wardcode";"wardname";"designated";"status";"survyear";"percancov";"standerr";"numpts";"warea"
+1;"England";"E05000026";"Abbey";"Urban";"Completed";2020;13.7;1.98;300;1256670.0
+2;"England";"E05000027";"Alibon";"Urban";"Completed";2020;7.33;1.51;300;1364760.0
+3;"England";"E05000028";"Becontree";"Urban";"Completed";2020;8.67;1.62;300;1288370.0
+4;"England";"E05000029";"Chadwell Heath";"Urban";"Completed";2020;14.5;2.0;300;3385010.0
+5;"England";"E05000030";"Eastbrook";"Urban";"Completed";2020;15.8;1.99;335;3451330.0
+6;"England";"E05000031";"Eastbury";"Urban";"Completed";2020;13.9;1.96;310;1439540.0
+7;"England";"E05000032";"Gascoigne";"Urban";"Completed";2020;6.0;1.37;300;1089920.0
+8;"England";"E05000033";"Goresbrook";"Urban";"Completed";2020;6.0;1.37;300;1278120.0
+9;"England";"E05000034";"Heath";"Urban";"Completed";2020;7.67;1.54;300;2001750.0
+10;"England";"E05000035";"Longbridge";"Urban";"Completed";2020;9.0;1.65;300;1645660.0
+11;"England";"E05000036";"Mayesbrook";"Urban";"Completed";2020;7.0;1.47;300;1856850.0
+12;"England";"E05000037";"Parsloes";"Urban";"Completed";2020;5.0;1.26;300;1244130.0
+13;"England";"E05000038";"River";"Urban";"Completed";2020;4.61;1.2;304;3129730.0
+14;"England";"E05000039";"Thames";"Urban";"Completed";2020;3.0;1.0;300;6688890.0
+15;"England";"E05000040";"Valence";"Urban";"Completed";2020;10.0;1.73;300;1293120.0
+16;"England";"E05000041";"Village";"Urban";"Completed";2020;14.07;2.46;199;2147990.0
+17;"England";"E05000042";"Whalebone";"Urban";"Completed";2020;10.33;1.76;300;1554320.0
+18;"England";"E05000043";"Brunswick Park";"Urban";"Completed";2020;19.7;2.29;300;3176350.0
+19;"England";"E05000044";"Burnt Oak";"Urban";"Completed";2021;13.43;1.82;350;2068080.0
+20;"England";"E05000045";"Childs Hill";"Urban";"Completed";2020;20.0;1.89;450;3094210.0
+21;"England";"E05000046";"Colindale";"Urban";"Completed";2019;14.3;1.99;308;2637350.0
+22;"England";"E05000047";"Coppetts";"Urban";"Completed";2019;16.3;2.13;300;2721540.0
+23;"England";"E05000048";"East Barnet";"Urban";"Completed";2020;26.6;1.98;500;3750790.0
+24;"England";"E05000049";"East Finchley";"Urban";"Completed";2019;28.7;2.61;300;2510800.0
+25;"England";"E05000050";"Edgware";"Urban";"Completed";2020;12.5;1.65;400;5558750.0
+26;"England";"E05000051";"Finchley Church End";"Urban";"Completed";2019;18.1;2.0;370;2726650.0
+27;"England";"E05000052";"Garden Suburb";"Urban";"Completed";2019;28.3;2.6;300;4728810.0
+28;"England";"E05000053";"Golders Green";"Urban";"Completed";2019;19.0;1.18;1108;2974020.0
+29;"England";"E05000054";"Hale";"Urban";"Completed";2020;28.67;2.61;300;5425560.0
+30;"England";"E05000055";"Hendon";"Urban";"Completed";2019;18.7;2.0;379;2839770.0
+31;"England";"E05000056";"High Barnet";"Urban";"Completed";2020;26.8;1.98;500;8309940.0
+32;"England";"E05000057";"Mill Hill";"Urban";"Completed";2019;24.0;2.0;456;9392880.0
+33;"England";"E05000058";"Oakleigh";"Urban";"Completed";2020;16.3;2.13;300;3319800.0
+34;"England";"E05000059";"Totteridge";"Urban";"Completed";2020;20.0;2.31;300;8777660.0
+35;"England";"E05000060";"Underhill";"Urban";"Completed";2020;15.14;1.92;350;4552350.0
+36;"England";"E05000061";"West Finchley";"Urban";"Completed";2020;16.3;1.84;400;2164210.0
+37;"England";"E05000062";"West Hendon";"Urban";"Completed";2019;16.3;1.99;344;3430060.0
+38;"England";"E05000063";"Woodhouse";"Urban";"Completed";2020;13.0;1.94;300;2622070.0
+39;"England";"E05000085";"Alperton";"Urban";"Completed";2019;8.67;1.62;300;2059420.0
+40;"England";"E05000086";"Barnhill";"Urban";"Completed";2020;23.11;1.99;450;2980340.0
+41;"England";"E05000087";"Brondesbury Park";"Urban";"Completed";2020;20.24;1.96;420;1730120.0
+42;"England";"E05000088";"Dollis Hill";"Urban";"Completed";2020;13.0;1.68;400;2300500.0
+43;"England";"E05000089";"Dudden Hill";"Urban";"Completed";2020;13.14;1.81;350;1682570.0
+44;"England";"E05000090";"Fryent";"Urban";"Completed";2020;16.86;2.0;350;2660600.0
+45;"England";"E05000091";"Harlesden";"Urban";"Completed";2019;8.67;1.62;300;1114190.0
+46;"England";"E05000092";"Kensal Green";"Urban";"Completed";2019;9.0;1.65;300;1120520.0
+47;"England";"E05000093";"Kenton";"Urban";"Completed";2020;16.75;1.87;400;2244090.0
+48;"England";"E05000094";"Kilburn";"Urban";"Completed";2020;17.75;1.91;400;944366.0
+49;"England";"E05000095";"Mapesbury";"Urban";"Completed";2020;19.5;1.98;400;1394040.0
+50;"England";"E05000096";"Northwick Park";"Urban";"Completed";2020;16.0;1.83;400;2681090.0
+51;"England";"E05000097";"Preston";"Urban";"Completed";2020;15.25;1.8;400;2389280.0
+52;"England";"E05000098";"Queens Park";"Urban";"Completed";2020;17.5;1.9;400;1486220.0
+53;"England";"E05000099";"Queensbury";"Urban";"Completed";2020;9.71;1.58;350;2052150.0
+54;"England";"E05000100";"Stonebridge";"Urban";"Completed";2019;8.33;1.6;300;4052360.0
+55;"England";"E05000101";"Sudbury";"Urban";"Completed";2019;10.7;1.78;300;2125770.0
+56;"England";"E05000102";"Tokyngton";"Urban";"Completed";2020;10.0;1.6;350;2760380.0
+57;"England";"E05000103";"Welsh Harp";"Urban";"Completed";2020;13.71;1.84;350;2319980.0
+58;"England";"E05000104";"Wembley Central";"Urban";"Completed";2020;6.0;1.27;350;1604930.0
+59;"England";"E05000105";"Willesden Green";"Urban";"Completed";2021;13.71;1.84;350;1548310.0
+60;"England";"E05000106";"Bickley";"Urban";"Completed";2020;24.67;2.49;300;4870140.0
+61;"England";"E05000107";"Biggin Hill";"Urban";"Completed";2020;18.0;2.22;300;8282920.0
+62;"England";"E05000108";"Bromley Common and Keston";"Urban";"Completed";2020;30.33;2.65;300;8309970.0
+63;"England";"E05000109";"Bromley Town";"Urban";"Completed";2020;21.0;2.35;300;3717480.0
+64;"England";"E05000111";"Chislehurst";"Rural";"Completed";2020;45.15;2.88;299;10443600.0
+65;"England";"E05000112";"Clock House";"Urban";"Completed";2020;20.93;2.34;301;2267130.0
+66;"England";"E05000113";"Copers Cope";"Urban";"Completed";2020;27.57;2.58;301;3287890.0
+67;"England";"E05000115";"Cray Valley West";"Urban";"Completed";2020;23.4;1.89;501;3939350.0
+68;"England";"E05000116";"Crystal Palace";"Urban";"Completed";2019;24.0;2.47;300;2291860.0
+69;"England";"E05000118";"Farnborough and Crofton";"Urban";"Completed";2020;26.0;2.53;300;7007230.0
+70;"England";"E05000120";"Kelsey and Eden Park";"Urban";"Completed";2020;23.1;2.42;303;5200360.0
+71;"England";"E05000121";"Mottingham and Chislehurst North";"Urban";"Completed";2020;22.3;2.38;305;2442480.0
+72;"England";"E05000122";"Orpington";"Urban";"Completed";2020;20.33;2.32;300;4257010.0
+73;"England";"E05000123";"Penge and Cator";"Urban";"Completed";2020;14.33;2.02;300;2960650.0
+74;"England";"E05000124";"Petts Wood and Knoll";"Urban";"Completed";2020;33.33;2.72;300;4302160.0
+75;"England";"E05000125";"Plaistow and Sundridge";"Urban";"Completed";2020;26.0;2.53;300;4001940.0
+76;"England";"E05000126";"Shortlands";"Urban";"Completed";2020;22.0;2.39;300;2457250.0
+77;"England";"E05000127";"West Wickham";"Urban";"Completed";2020;27.33;2.57;300;4411550.0
+78;"England";"E05000128";"Belsize";"Urban";"Completed";2020;24.0;2.01;450;780864.0
+79;"England";"E05000129";"Bloomsbury";"Urban";"Completed";2020;14.3;1.76;400;1021300.0
+80;"England";"E05000130";"Camden Town with Primrose Hill";"Urban";"Completed";2020;14.22;1.65;450;1166590.0
+81;"England";"E05000131";"Cantelowes";"Urban";"Completed";2019;19.3;2.28;300;759590.0
+82;"England";"E05000132";"Fortune Green";"Urban";"Completed";2020;22.44;1.97;450;1006910.0
+83;"England";"E05000133";"Frognal and Fitzjohns";"Urban";"Completed";2020;29.6;2.04;500;1530810.0
+84;"England";"E05000134";"Gospel Oak";"Urban";"Completed";2020;19.0;1.96;400;692560.0
+85;"England";"E05000135";"Hampstead Town";"Urban";"Completed";2020;40.5;2.45;400;2450310.0
+86;"England";"E05000136";"Haverstock";"Urban";"Completed";2020;20.67;1.91;450;732036.0
+87;"England";"E05000137";"Highgate";"Urban";"Completed";2019;33.7;2.73;300;3240430.0
+88;"England";"E05000138";"Holborn and Covent Garden";"Urban";"Completed";2019;11.0;1.81;300;1195350.0
+89;"England";"E05000139";"Kentish Town";"Urban";"Completed";2020;12.5;1.65;400;1029360.0
+90;"England";"E05000140";"Kilburn";"Urban";"Completed";2020;14.5;1.76;400;685424.0
+91;"England";"E05000141";"Kings Cross";"Urban";"Completed";2019;17.3;2.19;300;611576.0
+92;"England";"E05000142";"Regents Park";"Urban";"Completed";2020;18.0;1.92;400;1350060.0
+93;"England";"E05000143";"St Pancras and Somers Town";"Urban";"Completed";2019;11.0;1.81;300;1399440.0
+94;"England";"E05000144";"Swiss Cottage";"Urban";"Completed";2020;25.2;1.94;500;1257220.0
+95;"England";"E05000145";"West Hampstead";"Urban";"Completed";2020;10.0;1.73;300;887643.0
+96;"England";"E05000170";"Acton Central";"Urban";"Completed";0;18.2;0.0;0;1775370.0
+97;"England";"E05000171";"Cleveland";"Urban";"Completed";0;18.5;0.0;0;2229520.0
+98;"England";"E05000172";"Dormers Wells";"Urban";"Completed";0;22.4;0.0;0;2258310.0
+99;"England";"E05000173";"Ealing Broadway";"Urban";"Completed";0;12.5;0.0;0;1857560.0
+100;"England";"E05000174";"Ealing Common";"Urban";"Completed";0;16.3;0.0;0;2141970.0
+101;"England";"E05000175";"East Acton";"Urban";"Completed";0;13.2;0.0;0;4277720.0
+102;"England";"E05000176";"Elthorne";"Urban";"Completed";0;21.2;0.0;0;2000540.0
+103;"England";"E05000177";"Greenford Broadway";"Urban";"Completed";0;17.6;0.0;0;2517860.0
+104;"England";"E05000178";"Greenford Green";"Urban";"Completed";0;14.0;0.0;0;3386340.0
+105;"England";"E05000179";"Hanger Hill";"Urban";"Completed";0;22.8;0.0;0;3278600.0
+106;"England";"E05000180";"Hobbayne";"Urban";"Completed";0;23.0;0.0;0;2210350.0
+107;"England";"E05000181";"Lady Margaret";"Urban";"Completed";0;8.3;0.0;0;1542540.0
+108;"England";"E05000182";"Northfield";"Urban";"Completed";0;15.0;0.0;0;1540780.0
+109;"England";"E05000183";"North Greenford";"Urban";"Completed";0;25.9;0.0;0;3258930.0
+110;"England";"E05000184";"Northolt Mandeville";"Urban";"Completed";0;21.8;0.0;0;2757960.0
+111;"England";"E05000185";"Northolt West End";"Urban";"Completed";0;16.2;0.0;0;3547040.0
+112;"England";"E05000186";"Norwood Green";"Urban";"Completed";0;15.8;0.0;0;3797900.0
+113;"England";"E05000187";"Perivale";"Urban";"Completed";0;15.6;0.0;0;3369190.0
+114;"England";"E05000188";"South Acton";"Urban";"Completed";0;16.0;0.0;0;1719950.0
+115;"England";"E05000189";"Southall Broadway";"Urban";"Completed";0;10.3;0.0;0;1617970.0
+116;"England";"E05000190";"Southall Green";"Urban";"Completed";0;6.4;0.0;0;1586930.0
+117;"England";"E05000191";"Southfield";"Urban";"Completed";0;14.4;0.0;0;1429280.0
+118;"England";"E05000192";"Walpole";"Urban";"Completed";0;20.0;0.0;0;1466600.0
+119;"England";"E05000193";"Bowes";"Urban";"Completed";2018;19.7;1.77;500;1483830.0
+120;"England";"E05000194";"Bush Hill Park";"Urban";"Completed";2020;20.0;2.31;300;2525300.0
+121;"England";"E05000197";"Edmonton Green";"Urban";"Completed";2020;13.0;1.94;300;3127460.0
+122;"England";"E05000198";"Enfield Highway";"Urban";"Completed";2021;8.33;1.6;300;4638020.0
+123;"England";"E05000199";"Enfield Lock";"Urban";"Completed";2021;12.0;1.88;300;3253280.0
+124;"England";"E05000200";"Grange";"Urban";"Completed";2020;21.7;2.38;399;3286210.0
+125;"England";"E05000201";"Haselbury";"Urban";"Completed";2020;8.33;1.6;300;1796570.0
+126;"England";"E05000202";"Highlands";"Urban";"Completed";2020;19.3;2.28;300;5089770.0
+127;"England";"E05000203";"Jubilee";"Urban";"Completed";2021;7.0;1.47;300;3929560.0
+128;"England";"E05000204";"Lower Edmonton";"Urban";"Completed";2021;8.0;1.57;300;2183190.0
+129;"England";"E05000205";"Palmers Green";"Urban";"Completed";2019;10.0;1.73;300;1942740.0
+130;"England";"E05000206";"Ponders End";"Urban";"Completed";2021;5.0;1.26;300;3544060.0
+131;"England";"E05000207";"Southbury";"Urban";"Completed";2021;9.67;1.71;300;2867930.0
+132;"England";"E05000208";"Southgate";"Urban";"Completed";2021;18.0;1.92;400;2688120.0
+133;"England";"E05000209";"Southgate Green";"Urban";"Completed";2019;17.7;2.2;300;2614350.0
+134;"England";"E05000210";"Town";"Urban";"Completed";2021;14.33;2.02;300;2232060.0
+135;"England";"E05000211";"Turkey Street";"Urban";"Completed";2021;18.67;2.25;300;2262140.0
+136;"England";"E05000212";"Upper Edmonton";"Urban";"Completed";2019;9.33;1.68;300;2643270.0
+137;"England";"E05000213";"Winchmore Hill";"Urban";"Completed";2020;26.7;2.55;300;2761530.0
+138;"England";"E05000214";"Abbey Wood";"Urban";"Completed";2020;13.22;2.71;301;2657830.0
+139;"England";"E05000215";"Blackheath Westcombe";"Urban";"Completed";2020;23.33;2.44;300;2138720.0
+140;"England";"E05000216";"Charlton";"Urban";"Completed";2020;20.0;2.31;300;2031780.0
+141;"England";"E05000217";"Coldharbour and New Eltham";"Urban";"Completed";2020;14.0;2.0;300;2549940.0
+142;"England";"E05000218";"Eltham North";"Urban";"Completed";2020;22.74;2.42;299;2555790.0
+143;"England";"E05000219";"Eltham South";"Urban";"Completed";2020;21.67;2.38;300;4627560.0
+144;"England";"E05000220";"Eltham West";"Urban";"Completed";2020;11.0;1.81;300;2426310.0
+145;"England";"E05000221";"Glyndon";"Urban";"Completed";2020;14.61;2.01;308;1548160.0
+146;"England";"E05000222";"Greenwich West";"Urban";"Completed";2020;21.17;2.33;307;2528760.0
+147;"England";"E05000223";"Kidbrooke with Hornfair";"Urban";"Completed";2020;17.33;2.19;300;2375210.0
+148;"England";"E05000224";"Middle Park and Sutcliffe";"Urban";"Completed";2020;15.67;2.1;300;3292340.0
+149;"England";"E05000225";"Peninsula";"Urban";"Completed";2020;5.67;1.33;300;3420290.0
+150;"England";"E05000226";"Plumstead";"Urban";"Completed";2020;18.63;2.23;306;2342470.0
+151;"England";"E05000227";"Shooters Hill";"Urban";"Completed";2020;42.33;2.85;300;3771640.0
+152;"England";"E05000228";"Thamesmead Moorings";"Urban";"Completed";2020;12.0;1.88;300;3919910.0
+153;"England";"E05000229";"Woolwich Common";"Urban";"Completed";2020;15.0;2.06;300;2621070.0
+154;"England";"E05000230";"Woolwich Riverside";"Urban";"Completed";2020;12.75;1.91;306;2538580.0
+155;"England";"E05000250";"Addison";"Urban";"Completed";2019;10.3;1.76;300;555048.0
+156;"England";"E05000251";"Askew";"Urban";"Completed";2019;11.7;1.85;300;762813.0
+157;"England";"E05000252";"Avonmore and Brook Green";"Urban";"Completed";2020;20.94;1.97;425;896963.0
+158;"England";"E05000253";"College Park and Old Oak";"Urban";"Completed";2019;11.7;1.85;300;3438020.0
+159;"England";"E05000254";"Fulham Broadway";"Urban";"Completed";2020;9.71;1.58;350;668224.0
+160;"England";"E05000255";"Fulham Reach";"Urban";"Completed";2020;14.57;1.89;350;823036.0
+161;"England";"E05000256";"Hammersmith Broadway";"Urban";"Completed";2019;9.33;1.68;300;1048620.0
+162;"England";"E05000257";"Munster";"Urban";"Completed";2020;12.0;1.74;350;624523.0
+163;"England";"E05000258";"North End";"Urban";"Completed";2020;9.71;1.58;300;635414.0
+164;"England";"E05000259";"Palace Riverside";"Urban";"Completed";2020;24.4;1.92;500;1138080.0
+165;"England";"E05000260";"Parsons Green and Walham";"Urban";"Completed";2020;14.0;1.73;400;896191.0
+166;"England";"E05000261";"Ravenscourt Park";"Urban";"Completed";2019;20.2;1.8;501;1152630.0
+167;"England";"E05000262";"Sands End";"Urban";"Completed";2020;8.67;1.33;450;1142570.0
+168;"England";"E05000263";"Shepherds Bush Green";"Urban";"Completed";2019;11.3;1.83;300;1068610.0
+169;"England";"E05000264";"Town";"Urban";"Completed";2020;11.14;1.68;350;651574.0
+170;"England";"E05000265";"Wormholt and White City";"Urban";"Completed";2019;16.7;2.15;300;901997.0
+171;"England";"E05000266";"Alexandra";"Urban";"Completed";2018;23.0;2.43;300;2614740.0
+172;"England";"E05000267";"Bounds Green";"Urban";"Completed";2018;14.3;2.02;300;1386640.0
+173;"England";"E05000268";"Bruce Grove";"Urban";"Completed";2019;7.67;1.54;300;936855.0
+174;"England";"E05000269";"Crouch End";"Urban";"Completed";2018;22.7;2.42;300;1440870.0
+175;"England";"E05000270";"Fortis Green";"Urban";"Completed";2018;23.3;2.44;300;1991430.0
+176;"England";"E05000271";"Harringay";"Urban";"Completed";2019;13.3;1.96;300;1566570.0
+177;"England";"E05000272";"Highgate";"Urban";"Completed";2018;36.0;2.77;300;2495750.0
+178;"England";"E05000273";"Hornsey";"Urban";"Completed";2018;9.0;1.65;300;1054260.0
+179;"England";"E05000274";"Muswell Hill";"Urban";"Completed";2018;22.0;2.39;300;1653810.0
+180;"England";"E05000275";"Noel Park";"Urban";"Completed";2018;10.3;1.76;300;1225980.0
+181;"England";"E05000276";"Northumberland Park";"Urban";"Completed";2019;12.7;1.92;300;1888610.0
+182;"England";"E05000277";"St Anns";"Urban";"Completed";2019;13.7;1.98;300;1094140.0
+183;"England";"E05000278";"Seven Sisters";"Urban";"Completed";2019;12.6;1.92;300;1295040.0
+184;"England";"E05000279";"Stroud Green";"Urban";"Completed";2018;19.0;2.26;300;1094080.0
+185;"England";"E05000280";"Tottenham Green";"Urban";"Completed";2019;12.3;1.9;300;1360060.0
+186;"England";"E05000281";"Tottenham Hale";"Urban";"Completed";2019;14.7;2.04;300;1912460.0
+187;"England";"E05000282";"West Green";"Urban";"Completed";2019;14.7;2.04;300;1399560.0
+188;"England";"E05000283";"White Hart Lane";"Urban";"Completed";2019;10.3;1.76;300;1699350.0
+189;"England";"E05000284";"Woodside";"Urban";"Completed";2018;12.0;1.88;300;1497630.0
+190;"England";"E05000285";"Belmont";"Urban";"Completed";2020;12.0;1.74;350;1777830.0
+191;"England";"E05000286";"Canons";"Urban";"Completed";2020;30.36;1.96;550;5628830.0
+192;"England";"E05000287";"Edgware";"Urban";"Completed";2020;12.0;1.88;300;1403780.0
+193;"England";"E05000288";"Greenhill";"Urban";"Completed";2021;13.71;1.84;350;1745660.0
+194;"England";"E05000289";"Harrow on the Hill";"Urban";"Completed";2019;26.7;2.55;300;3573670.0
+195;"England";"E05000290";"Harrow Weald";"Urban";"Completed";2021;24.05;1.91;499;4591910.0
+196;"England";"E05000291";"Hatch End";"Urban";"Completed";2021;13.71;1.84;350;3280280.0
+197;"England";"E05000292";"Headstone North";"Urban";"Completed";2021;14.75;1.77;400;3297940.0
+198;"England";"E05000293";"Headstone South";"Urban";"Completed";2021;9.71;1.58;350;1468330.0
+199;"England";"E05000294";"Kenton East";"Urban";"Completed";2020;12.86;1.79;350;1279850.0
+200;"England";"E05000295";"Kenton West";"Urban";"Completed";2021;14.0;1.85;350;1765380.0
+201;"England";"E05000296";"Marlborough";"Urban";"Completed";2021;12.29;1.75;350;1647380.0
+202;"England";"E05000297";"Pinner";"Urban";"Completed";2021;23.78;2.0;450;3279030.0
+203;"England";"E05000298";"Pinner South";"Urban";"Completed";2021;19.5;1.98;400;2346770.0
+204;"England";"E05000299";"Queensbury";"Urban";"Completed";2020;7.43;1.4;350;1614320.0
+205;"England";"E05000300";"Rayners Lane";"Urban";"Completed";2021;14.86;1.9;350;1530490.0
+206;"England";"E05000301";"Roxbourne";"Urban";"Completed";2021;10.29;1.62;350;1506470.0
+207;"England";"E05000302";"Roxeth";"Urban";"Completed";2019;12.0;1.88;300;1575660.0
+208;"England";"E05000303";"Stanmore Park";"Urban";"Completed";2021;31.61;1.98;550;4461340.0
+209;"England";"E05000304";"Wealdstone";"Urban";"Completed";2021;10.0;1.73;300;1196550.0
+210;"England";"E05000305";"West Harrow";"Urban";"Completed";2021;12.0;1.74;350;1515370.0
+211;"England";"E05000306";"Brooklands";"Urban";"Completed";2020;8.0;1.57;300;4203520.0
+212;"England";"E05000307";"Cranham";"Urban";"Completed";2020;25.33;2.51;300;6556190.0
+213;"England";"E05000308";"Elm Park";"Urban";"Completed";2020;16.0;2.12;300;3665990.0
+214;"England";"E05000309";"Emerson Park";"Urban";"Completed";2020;18.67;2.25;300;4643260.0
+215;"England";"E05000310";"Gooshays";"Urban";"Completed";2020;20.0;2.31;300;7760400.0
+216;"England";"E05000311";"Hacton";"Urban";"Completed";2020;10.67;1.78;300;2465840.0
+217;"England";"E05000312";"Harold Wood";"Urban";"Completed";2020;24.0;2.47;300;7591150.0
+218;"England";"E05000313";"Havering Park";"Urban";"Completed";2020;21.43;2.34;308;9785200.0
+219;"England";"E05000314";"Heaton";"Urban";"Completed";2020;14.0;2.0;300;3416160.0
+220;"England";"E05000315";"Hylands";"Urban";"Completed";2020;14.33;2.02;300;2898240.0
+221;"England";"E05000316";"Mawneys";"Urban";"Completed";2020;8.67;1.62;300;3043310.0
+222;"England";"E05000317";"Pettits";"Urban";"Completed";2020;12.04;1.88;299;3955280.0
+223;"England";"E05000319";"Romford Town";"Urban";"Completed";2020;8.88;1.63;304;2865200.0
+224;"England";"E05000320";"St Andrews";"Urban";"Completed";2020;5.33;1.3;300;2677560.0
+225;"England";"E05000321";"South Hornchurch";"Urban";"Completed";2020;15.95;2.11;301;6309540.0
+226;"England";"E05000322";"Squirrels Heath";"Urban";"Completed";2020;18.33;2.23;300;2651900.0
+227;"England";"E05000324";"Barnhill";"Urban";"Completed";2019;11.0;1.81;300;2119220.0
+228;"England";"E05000325";"Botwell";"Urban";"Completed";2019;13.0;1.94;300;4364770.0
+229;"England";"E05000326";"Brunel";"Urban";"Completed";2021;16.29;1.97;350;3278350.0
+230;"England";"E05000327";"Cavendish";"Urban";"Completed";2021;14.86;1.9;350;2012430.0
+231;"England";"E05000328";"Charville";"Urban";"Completed";2019;15.0;2.06;300;2975730.0
+232;"England";"E05000329";"Eastcote and East Ruislip";"Urban";"Completed";2021;31.27;1.98;550;4065450.0
+233;"England";"E05000332";"Hillingdon East";"Urban";"Completed";2021;14.0;1.85;350;3599810.0
+234;"England";"E05000333";"Ickenham";"Urban";"Completed";2021;18.6;1.82;457;6207380.0
+235;"England";"E05000334";"Manor";"Urban";"Completed";2021;11.71;1.71;350;1975070.0
+236;"England";"E05000335";"Northwood";"Urban";"Completed";2021;29.45;1.94;550;7401630.0
+237;"England";"E05000336";"Northwood Hills";"Urban";"Completed";2021;22.89;1.98;450;3330220.0
+238;"England";"E05000337";"Pinkwell";"Urban";"Completed";2021;9.3;1.68;300;2749610.0
+239;"England";"E05000338";"South Ruislip";"Urban";"Completed";2019;6.67;1.44;300;7421370.0
+240;"England";"E05000339";"Townfield";"Urban";"Completed";2019;15.3;2.08;300;3499950.0
+241;"England";"E05000340";"Uxbridge North";"Urban";"Completed";2021;20.89;1.92;450;4643360.0
+242;"England";"E05000341";"Uxbridge South";"Urban";"Completed";2021;16.0;1.96;350;3115970.0
+243;"England";"E05000342";"West Drayton";"Urban";"Completed";2021;14.6;1.89;350;3492430.0
+244;"England";"E05000343";"West Ruislip";"Urban";"Completed";2021;24.6;1.93;500;4389470.0
+245;"England";"E05000344";"Yeading";"Urban";"Completed";2019;17.0;2.17;300;2322330.0
+246;"England";"E05000345";"Yiewsley";"Urban";"Completed";2021;18.5;1.94;400;4024370.0
+247;"England";"E05000346";"Bedfont";"Urban";"Completed";2021;10.37;1.76;299;4450530.0
+248;"England";"E05000347";"Brentford";"Urban";"Completed";2019;17.3;2.19;300;3152300.0
+249;"England";"E05000348";"Chiswick Homefields";"Urban";"Completed";2020;18.5;1.94;400;2037260.0
+250;"England";"E05000349";"Chiswick Riverside";"Urban";"Completed";2020;26.4;1.97;500;1925070.0
+251;"England";"E05000350";"Cranford";"Urban";"Completed";2021;16.86;2.0;350;2727580.0
+252;"England";"E05000351";"Feltham North";"Urban";"Completed";2021;14.0;1.85;350;3386110.0
+253;"England";"E05000352";"Feltham West";"Urban";"Completed";2021;16.0;2.12;300;3182440.0
+254;"England";"E05000353";"Hanworth";"Urban";"Completed";2021;11.33;1.83;300;3233990.0
+255;"England";"E05000354";"Hanworth Park";"Urban";"Completed";2021;19.0;1.96;400;3662740.0
+256;"England";"E05000355";"Heston Central";"Urban";"Completed";2021;8.29;1.47;350;1685560.0
+257;"England";"E05000356";"Heston East";"Urban";"Completed";2019;13.7;1.98;300;2060050.0
+258;"England";"E05000357";"Heston West";"Urban";"Completed";2019;12.0;1.88;300;3828430.0
+259;"England";"E05000358";"Hounslow Central";"Urban";"Completed";2019;7.0;1.47;300;1734720.0
+260;"England";"E05000359";"Hounslow Heath";"Urban";"Completed";2020;24.16;1.76;592;2783020.0
+261;"England";"E05000360";"Hounslow South";"Urban";"Completed";2019;10.3;1.76;300;1790900.0
+262;"England";"E05000361";"Hounslow West";"Urban";"Completed";2021;9.71;1.58;350;1620890.0
+263;"England";"E05000362";"Isleworth";"Urban";"Completed";2021;17.75;1.91;400;1967450.0
+264;"England";"E05000363";"Osterley and Spring Grove";"Urban";"Completed";2019;17.1;1.67;510;6280730.0
+265;"England";"E05000364";"Syon";"Urban";"Completed";2019;13.7;1.98;300;2723110.0
+266;"England";"E05000365";"Turnham Green";"Urban";"Completed";2019;16.0;2.12;300;1770270.0
+267;"England";"E05000366";"Barnsbury";"Urban";"Completed";2019;20.7;2.34;300;830396.0
+268;"England";"E05000367";"Bunhill";"Urban";"Completed";2019;13.3;1.96;300;1083000.0
+269;"England";"E05000368";"Caledonian";"Urban";"Completed";2019;11.7;1.85;300;1136540.0
+270;"England";"E05000369";"Canonbury";"Urban";"Completed";2020;26.7;2.55;300;807492.0
+271;"England";"E05000370";"Clerkenwell";"Urban";"Completed";2019;8.67;1.62;300;932962.0
+272;"England";"E05000371";"Finsbury Park";"Urban";"Completed";2019;12.7;1.92;300;916573.0
+273;"England";"E05000372";"Highbury East";"Urban";"Completed";2020;23.3;2.44;300;1008420.0
+274;"England";"E05000373";"Highbury West";"Urban";"Completed";2019;19.3;2.28;300;1082910.0
+275;"England";"E05000374";"Hillrise";"Urban";"Completed";2019;22.7;2.42;300;824975.0
+276;"England";"E05000375";"Holloway";"Urban";"Completed";2019;17.0;2.17;300;1009060.0
+277;"England";"E05000376";"Junction";"Urban";"Completed";2019;17.3;2.19;300;1027860.0
+278;"England";"E05000377";"Mildmay";"Urban";"Completed";2020;22.9;2.42;300;827059.0
+279;"England";"E05000378";"St Georges";"Urban";"Completed";2019;17.3;2.19;300;846135.0
+280;"England";"E05000379";"St Marys";"Urban";"Completed";2019;20.0;2.31;300;868606.0
+281;"England";"E05000380";"St Peters";"Urban";"Completed";2019;11.3;1.82;301;810799.0
+282;"England";"E05000381";"Tollington";"Urban";"Completed";2019;20.3;2.32;300;848961.0
+283;"England";"E05000400";"Alexandra";"Urban";"Completed";2021;21.79;1.98;436;2686180.0
+284;"England";"E05000401";"Berrylands";"Urban";"Completed";2021;18.33;2.23;300;1454530.0
+285;"England";"E05000402";"Beverley";"Urban";"Completed";2021;11.72;1.95;273;1879010.0
+286;"England";"E05000403";"Canbury";"Urban";"Completed";2021;17.0;1.88;400;1242930.0
+287;"England";"E05000404";"Chessington North and Hook";"Urban";"Completed";2022;10.28;1.91;253;1930580.0
+288;"England";"E05000405";"Chessington South";"Urban";"Completed";2021;21.67;2.38;300;7554780.0
+289;"England";"E05000406";"Coombe Hill";"Urban";"Completed";2021;34.33;1.99;568;4423470.0
+290;"England";"E05000407";"Coombe Vale";"Urban";"Completed";2021;13.01;1.97;292;1647820.0
+291;"England";"E05000408";"Grove";"Urban";"Completed";2021;10.67;1.78;300;1921220.0
+292;"England";"E05000409";"Norbiton";"Urban";"Completed";2022;10.33;1.76;300;1347720.0
+293;"England";"E05000410";"Old Malden";"Urban";"Completed";2021;14.93;1.89;355;1800910.0
+294;"England";"E05000411";"St James";"Urban";"Completed";2021;12.2;1.79;336;2166780.0
+295;"England";"E05000412";"St Marks";"Urban";"Completed";2021;13.67;1.98;300;1376380.0
+296;"England";"E05000413";"Surbiton Hill";"Urban";"Completed";2021;23.33;2.44;300;1665550.0
+297;"England";"E05000414";"Tolworth and Hook Rise";"Urban";"Completed";2021;13.51;1.99;296;2595790.0
+298;"England";"E05000415";"Tudor";"Urban";"Completed";2021;15.14;1.92;350;1583190.0
+299;"England";"E05000416";"Bishops";"Urban";"Completed";2019;11.0;1.81;300;1237450.0
+300;"England";"E05000417";"Brixton Hill";"Urban";"Completed";2019;13.4;1.97;300;1131630.0
+301;"England";"E05000418";"Clapham Common";"Urban";"Completed";2019;17.0;2.17;300;1339040.0
+302;"England";"E05000419";"Clapham Town";"Urban";"Completed";2019;13.7;1.98;300;1119330.0
+303;"England";"E05000420";"Coldharbour";"Urban";"Completed";2019;16.0;2.12;300;1208470.0
+304;"England";"E05000421";"Ferndale";"Urban";"Completed";2019;12.8;1.93;300;851028.0
+305;"England";"E05000422";"Gipsy Hill";"Urban";"Completed";2019;21.3;2.37;300;1571160.0
+306;"England";"E05000423";"Herne Hill";"Urban";"Completed";2019;18.7;2.25;300;2031090.0
+307;"England";"E05000424";"Knights Hill";"Urban";"Completed";2019;17.3;2.19;300;1472140.0
+308;"England";"E05000425";"Larkhall";"Urban";"Completed";2019;17.3;2.19;300;1061630.0
+309;"England";"E05000426";"Oval";"Urban";"Completed";2019;10.0;1.73;300;1242200.0
+310;"England";"E05000427";"Princes";"Urban";"Completed";2019;10.0;1.73;300;1063150.0
+311;"England";"E05000428";"St Leonards";"Urban";"Completed";2019;15.0;2.06;300;1448240.0
+312;"England";"E05000429";"Stockwell";"Urban";"Completed";2019;14.7;2.04;300;867072.0
+313;"England";"E05000430";"Streatham Hill";"Urban";"Completed";2019;20.3;2.32;300;1271070.0
+314;"England";"E05000431";"Streatham South";"Urban";"Completed";2019;18.3;2.23;300;1698660.0
+315;"England";"E05000432";"Streatham Wells";"Urban";"Completed";2019;17.0;2.17;300;1450280.0
+316;"England";"E05000433";"Thornton";"Urban";"Completed";2019;13.0;1.9;300;1077970.0
+317;"England";"E05000434";"Thurlow Park";"Urban";"Completed";2019;20.3;2.32;300;1515330.0
+318;"England";"E05000435";"Tulse Hill";"Urban";"Completed";2019;22.8;1.88;500;1032300.0
+319;"England";"E05000436";"Vassall";"Urban";"Completed";2019;15.0;2.06;300;1130110.0
+320;"England";"E05000437";"Bellingham";"Urban";"Completed";2020;24.0;2.47;300;3085630.0
+321;"England";"E05000438";"Blackheath";"Urban";"Completed";2020;23.26;2.44;301;2318830.0
+322;"England";"E05000439";"Brockley";"Urban";"Completed";2020;26.33;2.54;300;1682340.0
+323;"England";"E05000440";"Catford South";"Urban";"Completed";2020;17.33;2.19;300;1867080.0
+324;"England";"E05000441";"Crofton Park";"Urban";"Completed";2020;19.0;2.26;300;1720160.0
+325;"England";"E05000442";"Downham";"Urban";"Completed";2020;17.0;2.17;300;2382500.0
+326;"England";"E05000443";"Evelyn";"Urban";"Completed";2020;14.0;2.0;300;1622870.0
+327;"England";"E05000444";"Forest Hill";"Urban";"Completed";2019;25.3;2.51;300;1828410.0
+328;"England";"E05000445";"Grove Park";"Urban";"Completed";2020;19.0;2.26;300;2393580.0
+329;"England";"E05000446";"Ladywell";"Urban";"Completed";2020;26.0;2.53;300;1606470.0
+330;"England";"E05000447";"Lee Green";"Urban";"Completed";2020;19.0;2.26;300;1798940.0
+331;"England";"E05000448";"Lewisham Central";"Urban";"Completed";2020;21.33;2.37;300;2062610.0
+332;"England";"E05000449";"New Cross";"Urban";"Completed";2020;13.0;1.94;300;1797630.0
+333;"England";"E05000450";"Perry Vale";"Urban";"Completed";2020;26.33;2.54;300;1685000.0
+334;"England";"E05000451";"Rushey Green";"Urban";"Completed";2020;16.05;2.12;299;1785770.0
+335;"England";"E05000452";"Sydenham";"Urban";"Completed";2019;20.7;2.34;300;1744260.0
+336;"England";"E05000453";"Telegraph Hill";"Urban";"Completed";2020;21.33;2.37;300;1546820.0
+337;"England";"E05000454";"Whitefoot";"Urban";"Completed";2020;18.33;2.23;300;2230670.0
+338;"England";"E05000455";"Abbey";"Urban";"Completed";2021;10.93;1.8;302;1393800.0
+339;"England";"E05000456";"Cannon Hill";"Urban";"Completed";2021;10.84;1.97;249;2224300.0
+340;"England";"E05000457";"Colliers Wood";"Urban";"Completed";2021;15.06;2.03;312;1111360.0
+341;"England";"E05000458";"Cricket Green";"Urban";"Completed";2019;17.8;1.56;600;2996590.0
+342;"England";"E05000459";"Dundonald";"Urban";"Completed";2021;14.33;2.02;300;1152440.0
+343;"England";"E05000460";"Figges Marsh";"Urban";"Completed";2019;9.36;1.68;299;1142370.0
+344;"England";"E05000461";"Graveney";"Urban";"Completed";2019;9.0;1.65;300;882870.0
+345;"England";"E05000462";"Hillside";"Urban";"Completed";2021;17.33;1.65;525;1189450.0
+346;"England";"E05000463";"Lavender Fields";"Urban";"Completed";2019;11.0;1.81;300;1180100.0
+347;"England";"E05000464";"Longthornton";"Urban";"Completed";2019;7.33;1.51;300;1483970.0
+348;"England";"E05000465";"Lower Morden";"Urban";"Completed";2021;12.41;1.17;798;1804490.0
+349;"England";"E05000466";"Merton Park";"Urban";"Completed";2021;15.13;1.95;337;1814870.0
+350;"England";"E05000467";"Pollards Hill";"Urban";"Completed";2019;20.7;1.65;600;2164080.0
+351;"England";"E05000468";"Ravensbury";"Urban";"Completed";2022;16.23;1.65;499;1840240.0
+352;"England";"E05000469";"Raynes Park";"Urban";"Completed";2021;20.28;1.95;424;1857260.0
+353;"England";"E05000470";"St Helier";"Urban";"Completed";2021;18.0;2.22;300;1846000.0
+354;"England";"E05000471";"Trinity";"Urban";"Completed";2021;12.44;1.56;450;1076440.0
+355;"England";"E05000472";"Village";"Urban";"Completed";2021;40.02;1.63;907;6215370.0
+356;"England";"E05000473";"West Barnes";"Urban";"Completed";2021;9.22;1.3;499;1952430.0
+357;"England";"E05000474";"Wimbledon Park";"Urban";"Completed";2021;17.82;1.33;825;2311000.0
+358;"England";"E05000475";"Beckton";"Urban";"Completed";2020;9.97;1.73;301;5546620.0
+359;"England";"E05000476";"Boleyn";"Urban";"Completed";2020;8.28;1.59;302;917424.0
+360;"England";"E05000477";"Canning Town North";"Urban";"Completed";2020;11.14;1.68;350;2460170.0
+361;"England";"E05000478";"Canning Town South";"Urban";"Completed";2020;6.35;1.41;299;1686330.0
+362;"England";"E05000479";"Custom House";"Urban";"Completed";2020;15.89;2.1;302;2063980.0
+363;"England";"E05000480";"East Ham Central";"Urban";"Completed";2020;10.26;1.75;302;1032250.0
+364;"England";"E05000481";"East Ham North";"Urban";"Completed";2020;11.33;1.83;300;904854.0
+365;"England";"E05000482";"East Ham South";"Urban";"Completed";2020;15.61;2.09;301;1792020.0
+366;"England";"E05000483";"Forest Gate North";"Urban";"Completed";2020;13.58;1.97;302;1247990.0
+367;"England";"E05000484";"Forest Gate South";"Urban";"Completed";2020;13.33;1.96;300;1191450.0
+368;"England";"E05000485";"Green Street East";"Urban";"Completed";2020;8.33;1.6;300;746497.0
+369;"England";"E05000486";"Green Street West";"Urban";"Completed";2020;8.67;1.62;300;802994.0
+370;"England";"E05000487";"Little Ilford";"Urban";"Completed";2020;22.07;2.4;299;1900100.0
+371;"England";"E05000488";"Manor Park";"Urban";"Completed";2020;15.33;2.08;300;1335190.0
+372;"England";"E05000489";"Plaistow North";"Urban";"Completed";2020;9.97;1.73;301;984451.0
+373;"England";"E05000490";"Plaistow South";"Urban";"Completed";2020;16.33;2.13;300;1384860.0
+374;"England";"E05000491";"Royal Docks";"Urban";"Completed";2020;3.72;1.01;349;3308590.0
+375;"England";"E05000492";"Stratford and New Town";"Urban";"Completed";2020;7.49;1.5;307;4190970.0
+376;"England";"E05000493";"Wall End";"Urban";"Completed";2020;5.13;1.25;312;1377070.0
+377;"England";"E05000494";"West Ham";"Urban";"Completed";2020;15.06;2.03;312;1337320.0
+378;"England";"E05000516";"Barnes";"Urban";"Completed";2020;18.5;1.59;600;2646760.0
+379;"England";"E05000517";"East Sheen";"Urban";"Completed";2020;22.67;1.71;600;5835620.0
+380;"England";"E05000518";"Fulwell and Hampton Hill";"Urban";"Completed";2019;21.2;1.83;499;1918510.0
+381;"England";"E05000519";"Ham Petersham and Richmond Riverside";"Urban";"Completed";2019;39.4;1.98;611;9255150.0
+382;"England";"E05000520";"Hampton";"Urban";"Completed";2019;20.7;1.82;497;6880390.0
+383;"England";"E05000521";"Hampton North";"Urban";"Completed";2021;9.33;1.19;600;1950640.0
+384;"England";"E05000522";"Hampton Wick";"Urban";"Completed";2021;15.5;1.48;600;2742330.0
+385;"England";"E05000523";"Heathfield";"Urban";"Completed";2020;15.5;1.48;600;1911350.0
+386;"England";"E05000524";"Kew";"Urban";"Completed";2020;29.5;1.86;600;3301920.0
+387;"England";"E05000525";"Mortlake and Barnes Common";"Urban";"Completed";2020;28.67;1.85;600;1843730.0
+388;"England";"E05000526";"North Richmond";"Urban";"Completed";2020;17.33;1.55;600;2716810.0
+389;"England";"E05000527";"St Margarets and North Twickenham";"Urban";"Completed";2020;17.79;1.57;596;1968220.0
+390;"England";"E05000528";"South Richmond";"Urban";"Completed";2019;21.0;1.82;500;2661120.0
+391;"England";"E05000529";"South Twickenham";"Urban";"Completed";2020;18.0;1.57;600;1691110.0
+392;"England";"E05000530";"Teddington";"Urban";"Completed";2019;27.3;1.99;499;4269020.0
+393;"England";"E05000531";"Twickenham Riverside";"Urban";"Completed";2020;21.83;1.69;600;1752460.0
+394;"England";"E05000532";"West Twickenham";"Urban";"Completed";2021;14.0;1.42;600;2459580.0
+395;"England";"E05000533";"Whitton";"Urban";"Completed";2020;13.0;1.37;600;1626670.0
+396;"England";"E05000555";"Beddington North";"Urban";"Completed";2021;13.0;1.94;300;4989870.0
+397;"England";"E05000556";"Beddington South";"Urban";"Completed";2021;19.0;2.26;300;3062160.0
+398;"England";"E05000557";"Belmont";"Urban";"Completed";2021;19.0;2.26;300;2334160.0
+399;"England";"E05000558";"Carshalton Central";"Urban";"Completed";2021;19.0;2.26;300;2024590.0
+400;"England";"E05000559";"Carshalton South and Clockhouse";"Urban";"Completed";2021;23.67;2.45;300;7055940.0
+401;"England";"E05000560";"Cheam";"Urban";"Completed";2021;18.06;2.22;299;3931850.0
+402;"England";"E05000561";"Nonsuch";"Urban";"Completed";2021;18.0;2.22;300;1907780.0
+403;"England";"E05000562";"St Helier";"Urban";"Completed";2021;8.03;1.57;299;1497230.0
+404;"England";"E05000563";"Stonecot";"Urban";"Completed";2021;11.67;1.85;300;1984370.0
+405;"England";"E05000564";"Sutton Central";"Urban";"Completed";2021;11.67;1.85;300;1310930.0
+406;"England";"E05000565";"Sutton North";"Urban";"Completed";2021;18.0;2.22;300;1874370.0
+407;"England";"E05000566";"Sutton South";"Urban";"Completed";2021;21.67;2.38;300;1272070.0
+408;"England";"E05000567";"Sutton West";"Urban";"Completed";2021;17.0;2.17;300;1782810.0
+409;"England";"E05000568";"The Wrythe";"Urban";"Completed";2021;17.0;2.17;300;1484120.0
+410;"England";"E05000569";"Wallington North";"Urban";"Completed";2021;16.67;2.15;300;1619840.0
+411;"England";"E05000570";"Wallington South";"Urban";"Completed";2021;18.75;2.24;304;1718630.0
+412;"England";"E05000571";"Wandle Valley";"Urban";"Completed";2021;21.19;2.35;302;2054390.0
+413;"England";"E05000572";"Worcester Park";"Urban";"Completed";2021;13.67;1.98;300;1957830.0
+414;"England";"E05000590";"Cann Hall";"Urban";"Completed";2020;11.67;1.85;300;858110.0
+415;"England";"E05000591";"Cathall";"Urban";"Completed";2020;11.32;1.78;318;1057400.0
+416;"England";"E05000592";"Chapel End";"Urban";"Completed";2020;15.7;2.1;300;1850630.0
+417;"England";"E05000593";"Chingford Green";"Urban";"Completed";2020;36.0;2.77;300;3727670.0
+418;"England";"E05000594";"Endlebury";"Urban";"Completed";2020;14.0;2.0;300;1949610.0
+419;"England";"E05000595";"Forest";"Urban";"Completed";2020;31.15;2.65;305;1986480.0
+420;"England";"E05000596";"Grove Green";"Urban";"Completed";2020;10.0;1.73;300;896054.0
+421;"England";"E05000597";"Hale End and Highams Park";"Urban";"Completed";2020;39.71;2.62;350;2347490.0
+422;"England";"E05000598";"Hatch Lane";"Urban";"Completed";2020;29.9;2.64;301;2416900.0
+423;"England";"E05000599";"High Street";"Urban";"Completed";2019;9.7;1.71;300;3059910.0
+424;"England";"E05000600";"Higham Hill";"Urban";"Completed";2019;7.67;1.54;300;3222230.0
+425;"England";"E05000601";"Hoe Street";"Urban";"Completed";2020;18.7;2.25;300;1100350.0
+426;"England";"E05000602";"Larkswood";"Urban";"Completed";2020;23.71;2.27;350;2066240.0
+427;"England";"E05000603";"Lea Bridge";"Urban";"Completed";2020;10.7;1.78;300;2647760.0
+428;"England";"E05000604";"Leyton";"Urban";"Completed";2020;5.65;1.33;301;2032770.0
+429;"England";"E05000605";"Leytonstone";"Urban";"Completed";2020;15.33;2.08;300;1306220.0
+430;"England";"E05000606";"Markhouse";"Urban";"Completed";2020;13.7;1.98;300;1457570.0
+431;"England";"E05000607";"Valley";"Urban";"Completed";2020;11.0;1.81;300;1985470.0
+432;"England";"E05000608";"William Morris";"Urban";"Completed";2019;18.4;1.99;380;999477.0
+433;"England";"E05000609";"Wood Street";"Urban";"Completed";2020;32.95;2.25;349;1850560.0
+434;"England";"E05000610";"Balham";"Urban";"Completed";2019;9.0;1.65;300;1212190.0
+435;"England";"E05000611";"Bedford";"Urban";"Completed";2019;25.3;2.51;300;1805490.0
+436;"England";"E05000612";"Earlsfield";"Urban";"Completed";2022;15.14;1.86;370;1403970.0
+437;"England";"E05000613";"East Putney";"Urban";"Completed";2021;25.67;2.52;300;1610970.0
+438;"England";"E05000614";"Fairfield";"Urban";"Completed";2021;13.33;1.96;300;1387380.0
+439;"England";"E05000615";"Furzedown";"Urban";"Completed";2019;18.7;2.26;300;1415810.0
+440;"England";"E05000616";"Graveney";"Urban";"Completed";2021;14.0;2.0;300;1011550.0
+441;"England";"E05000617";"Latchmere";"Urban";"Completed";2020;19.0;1.18;1100;1083690.0
+442;"England";"E05000618";"Nightingale";"Urban";"Completed";2021;11.71;1.72;350;1232460.0
+443;"England";"E05000619";"Northcote";"Urban";"Completed";2019;15.0;2.06;300;1675990.0
+444;"England";"E05000620";"Queenstown";"Urban";"Completed";2019;17.0;2.17;300;2893450.0
+445;"England";"E05000621";"Roehampton and Putney Heath";"Urban";"Completed";2021;38.67;2.81;300;4426000.0
+446;"England";"E05000622";"St Marys Park";"Urban";"Completed";2020;16.57;1.99;350;1083420.0
+447;"England";"E05000623";"Shaftesbury";"Urban";"Completed";2019;9.67;1.71;300;948220.0
+448;"England";"E05000624";"Southfields";"Urban";"Completed";2021;14.0;2.0;300;1525310.0
+449;"England";"E05000625";"Thamesfield";"Urban";"Completed";2021;16.0;1.95;350;1660310.0
+450;"England";"E05000626";"Tooting";"Urban";"Completed";2021;12.0;1.88;300;1600850.0
+451;"England";"E05000627";"Wandsworth Common";"Urban";"Completed";2021;18.0;2.22;300;2766090.0
+452;"England";"E05000628";"West Hill";"Urban";"Completed";2021;22.33;2.4;300;1686360.0
+453;"England";"E05000629";"West Putney";"Urban";"Completed";2021;22.67;2.42;300;1848310.0
+454;"England";"E05000630";"Abbey Road";"Urban";"Completed";2020;26.0;1.96;500;1095330.0
+455;"England";"E05000631";"Bayswater";"Urban";"Completed";2020;13.5;1.71;400;519715.0
+456;"England";"E05000632";"Bryanston and Dorset Square";"Urban";"Completed";2019;9.67;1.71;300;723480.0
+457;"England";"E05000633";"Churchill";"Urban";"Completed";2019;11.0;1.81;300;516100.0
+458;"England";"E05000634";"Church Street";"Urban";"Completed";2020;11.4;2.6;150;442849.0
+459;"England";"E05000635";"Harrow Road";"Urban";"Completed";2020;13.0;1.68;400;496014.0
+460;"England";"E05000636";"Hyde Park";"Urban";"Completed";2019;13.0;1.95;300;955467.0
+461;"England";"E05000637";"Knightsbridge and Belgravia";"Urban";"Completed";2019;25.7;2.52;300;3595650.0
+462;"England";"E05000638";"Lancaster Gate";"Urban";"Completed";2019;16.0;2.12;300;631066.0
+463;"England";"E05000639";"Little Venice";"Urban";"Completed";2020;24.67;2.03;450;637579.0
+464;"England";"E05000640";"Maida Vale";"Urban";"Completed";2020;22.44;1.97;450;646406.0
+465;"England";"E05000641";"Marylebone High Street";"Urban";"Completed";2020;8.5;1.39;400;1001450.0
+466;"England";"E05000642";"Queens Park";"Urban";"Completed";2020;11.0;1.81;300;584046.0
+467;"England";"E05000643";"Regents Park";"Urban";"Completed";2020;28.0;2.01;500;2256630.0
+468;"England";"E05000644";"St Jamess";"Urban";"Completed";2019;20.3;2.32;300;3193530.0
+469;"England";"E05000645";"Tachbrook";"Urban";"Completed";2019;12.4;1.47;500;354010.0
+470;"England";"E05000646";"Vincent Square";"Urban";"Completed";2019;9.67;1.71;300;594856.0
+471;"England";"E05000647";"Warwick";"Urban";"Completed";2019;11.0;1.81;300;573765.0
+472;"England";"E05000648";"Westbourne";"Urban";"Completed";2020;23.33;1.99;450;676705.0
+473;"England";"E05000649";"West End";"Urban";"Completed";2019;5.0;1.26;300;2000460.0
+4276;"England";"E05009288";"Aldersgate";"Urban";"Completed";2019;11.7;0.99;1050;97990.1
+4277;"England";"E05009289";"Aldgate";"Urban";"Completed";2020;0.86;0.5;347;112346.0
+4278;"England";"E05009290";"Bassishaw";"Urban";"Completed";2020;5.33;1.3;300;106614.0
+4279;"England";"E05009291";"Billingsgate";"Urban";"Completed";2020;3.33;1.04;300;81251.9
+4280;"England";"E05009292";"Bishopsgate";"Urban";"Completed";2020;1.67;0.75;300;253943.0
+4281;"England";"E05009293";"Bread Street";"Urban";"Completed";2019;7.42;0.99;701;87972.4
+4282;"England";"E05009294";"Bridge";"Urban";"Completed";2019;2.0;0.62;501;70100.1
+4283;"England";"E05009295";"Broad Street";"Urban";"Completed";2020;2.38;0.97;252;81589.6
+4284;"England";"E05009296";"Candlewick";"Urban";"Completed";2019;0.5;0.35;401;52104.5
+4285;"England";"E05009297";"Castle Baynard";"Urban";"Completed";2019;3.67;1.09;300;289620.0
+4286;"England";"E05009298";"Cheap";"Urban";"Completed";2019;1.4;0.53;501;91643.0
+4287;"England";"E05009299";"Coleman Street";"Urban";"Completed";2020;5.0;1.26;300;150651.0
+4288;"England";"E05009300";"Cordwainer";"Urban";"Completed";2019;1.0;0.58;300;59666.9
+4289;"England";"E05009301";"Cornhill";"Urban";"Completed";2020;0.98;0.57;306;64806.9
+4290;"England";"E05009302";"Cripplegate";"Urban";"Completed";2020;5.33;1.3;300;127209.0
+4291;"England";"E05009303";"Dowgate";"Urban";"Completed";2019;4.2;0.9;500;70635.5
+4292;"England";"E05009304";"Farringdon Within";"Urban";"Completed";2019;3.67;1.09;300;243847.0
+4293;"England";"E05009305";"Farringdon Without";"Urban";"Completed";2019;6.67;1.44;300;307339.0
+4294;"England";"E05009306";"Langbourn";"Urban";"Completed";2020;0.0;0.0;300;51950.6
+4295;"England";"E05009307";"Lime Street";"Urban";"Completed";2020;5.42;1.42;248;50971.4
+4296;"England";"E05009308";"Portsoken";"Urban";"Completed";2020;9.84;1.87;254;62903.5
+4297;"England";"E05009309";"Queenhithe";"Urban";"Completed";2019;3.14;0.93;350;43645.5
+4298;"England";"E05009310";"Tower";"Urban";"Completed";2020;2.92;0.97;308;191390.0
+4299;"England";"E05009311";"Vintry";"Urban";"Completed";2019;3.43;0.97;350;79988.5
+4300;"England";"E05009312";"Walbrook";"Urban";"Completed";2020;0.67;0.47;300;74766.2
+4303;"England";"E05009317";"Bethnal Green";"Urban";"Completed";2020;17.38;2.17;305;1213940.0
+4304;"England";"E05009318";"Blackwall  Cubitt Town";"Rural";"Completed";2020;8.97;1.65;301;1355780.0
+4305;"England";"E05009319";"Bow East";"Urban";"Completed";2020;20.33;2.32;300;1866750.0
+4306;"England";"E05009320";"Bow West";"Urban";"Completed";2020;24.33;2.48;300;1343700.0
+4307;"England";"E05009321";"Bromley North";"Urban";"Completed";2020;11.0;1.81;300;606751.0
+4308;"England";"E05009322";"Bromley South";"Urban";"Completed";2020;13.25;1.9;302;688133.0
+4309;"England";"E05009323";"Canary Wharf";"Urban";"Completed";2020;5.0;1.26;300;1414430.0
+4310;"England";"E05009324";"Island Gardens";"Urban";"Completed";2020;16.79;1.87;399;1066160.0
+4311;"England";"E05009325";"Lansbury";"Urban";"Completed";2020;9.72;1.56;360;1270640.0
+4312;"England";"E05009326";"Limehouse";"Urban";"Completed";2020;14.33;1.88;349;392442.0
+4313;"England";"E05009327";"Mile End";"Urban";"Completed";2020;25.0;2.17;400;1215370.0
+4314;"England";"E05009328";"Poplar";"Urban";"Completed";2020;14.57;1.89;350;696170.0
+4315;"England";"E05009329";"St Dunstans";"Urban";"Completed";2020;14.24;1.99;309;679284.0
+4316;"England";"E05009330";"St Katharines  Wapping";"Urban";"Completed";2020;9.0;1.65;300;1074130.0
+4317;"England";"E05009331";"St Peters";"Urban";"Completed";2020;17.04;2.13;311;1084270.0
+4318;"England";"E05009332";"Shadwell";"Urban";"Completed";2020;13.33;1.96;300;642929.0
+4319;"England";"E05009333";"Spitalfields  Banglatown";"Urban";"Completed";2020;10.1;1.72;307;909258.0
+4320;"England";"E05009334";"Stepney Green";"Urban";"Completed";2020;14.9;2.05;302;648413.0
+4321;"England";"E05009335";"Weavers";"Urban";"Completed";2020;15.0;2.06;300;675560.0
+4322;"England";"E05009336";"Whitechapel";"Urban";"Completed";2020;8.67;1.62;300;960083.0
+4349;"England";"E05009367";"Brownswood";"Urban";"Completed";2019;13.3;1.96;300;482648.0
+4350;"England";"E05009368";"Cazenove";"Urban";"Completed";2020;12.3;1.9;300;741794.0
+4351;"England";"E05009369";"Clissold";"Urban";"Completed";2020;17.3;2.19;300;1011060.0
+4352;"England";"E05009370";"Dalston";"Urban";"Completed";2020;12.0;1.87;300;535147.0
+4353;"England";"E05009371";"De Beauvoir";"Urban";"Completed";2019;15.3;1.99;328;593648.0
+4354;"England";"E05009372";"Hackney Central";"Urban";"Completed";2020;20.44;1.9;450;778614.0
+4355;"England";"E05009373";"Hackney Downs";"Urban";"Completed";2020;21.3;2.37;300;1018800.0
+4356;"England";"E05009374";"Hackney Wick";"Urban";"Completed";2020;16.94;1.98;360;1634400.0
+4357;"England";"E05009375";"Haggerston";"Urban";"Completed";2020;11.7;1.85;300;867524.0
+4358;"England";"E05009376";"Homerton";"Urban";"Completed";2020;11.33;1.83;300;805322.0
+4359;"England";"E05009377";"Hoxton East  Shoreditch";"Urban";"Completed";2020;7.33;1.51;300;1023880.0
+4360;"England";"E05009378";"Hoxton West";"Urban";"Completed";2019;6.31;1.4;301;648271.0
+4361;"England";"E05009379";"Kings Park";"Urban";"Completed";2020;16.77;2.12;310;1916360.0
+4362;"England";"E05009380";"Leabridge";"Urban";"Completed";2020;14.7;2.04;300;1060070.0
+4363;"England";"E05009381";"London Fields";"Urban";"Completed";2020;16.3;2.13;300;1017700.0
+4364;"England";"E05009382";"Shacklewell";"Urban";"Completed";2020;10.8;1.39;499;432332.0
+4365;"England";"E05009383";"Springfield";"Urban";"Completed";2019;17.0;2.17;300;1213370.0
+4366;"England";"E05009384";"Stamford Hill West";"Urban";"Completed";2020;18.3;2.23;300;669968.0
+4367;"England";"E05009385";"Stoke Newington";"Urban";"Completed";2020;8.5;1.39;400;962142.0
+4368;"England";"E05009386";"Victoria";"Urban";"Completed";2020;17.67;2.2;300;761098.0
+4369;"England";"E05009387";"Woodberry Down";"Urban";"Completed";2019;12.7;1.92;300;881065.0
+4370;"England";"E05009388";"Abingdon";"Urban";"Completed";2019;16.3;2.13;300;602016.0
+4371;"England";"E05009389";"Brompton  Hans Town";"Urban";"Completed";2019;15.0;2.06;300;1068500.0
+4372;"England";"E05009390";"Campden";"Urban";"Completed";2019;22.0;2.39;300;1024150.0
+4373;"England";"E05009391";"Chelsea Riverside";"Urban";"Completed";2020;20.22;1.89;450;537800.0
+4374;"England";"E05009392";"Colville";"Urban";"Completed";2019;16.7;2.15;300;490074.0
+4375;"England";"E05009393";"Courtfield";"Urban";"Completed";2020;20.0;1.8;450;614573.0
+4376;"England";"E05009394";"Dalgarno";"Urban";"Completed";2019;14.1;2.02;300;890176.0
+4377;"England";"E05009395";"Earls Court";"Urban";"Completed";2020;13.0;1.94;300;482448.0
+4378;"England";"E05009396";"Golborne";"Urban";"Completed";2020;16.5;1.86;400;558741.0
+4379;"England";"E05009397";"Holland";"Urban";"Completed";2019;33.7;2.73;300;983173.0
+4380;"England";"E05009398";"Norland";"Urban";"Completed";2019;19.7;2.29;300;519898.0
+4381;"England";"E05009399";"Notting Dale";"Urban";"Completed";2019;13.3;1.96;300;557101.0
+4382;"England";"E05009400";"Pembridge";"Urban";"Completed";2019;13.3;1.96;300;386727.0
+4383;"England";"E05009401";"Queens Gate";"Urban";"Completed";2019;15.7;2.1;300;582410.0
+4384;"England";"E05009402";"Redcliffe";"Urban";"Completed";2020;23.62;1.96;470;718821.0
+4385;"England";"E05009403";"Royal Hospital";"Urban";"Completed";2019;16.0;2.12;300;909059.0
+4386;"England";"E05009404";"St. Helens";"Urban";"Completed";2019;15.3;2.08;300;478422.0
+4387;"England";"E05009405";"Stanley";"Urban";"Completed";2020;14.5;1.76;400;724521.0
+5241;"England";"E05011096";"Camberwell Green";"Urban";"Completed";2019;13.0;1.94;300;927852.0
+5697;"England";"E05011095";"Borough  Bankside";"Urban";"Completed";2019;6.33;1.41;300;1010300.0
+5698;"England";"E05011222";"Crayford";"Urban";"Completed";2020;12.67;1.92;300;5104570.0
+5702;"England";"E05011097";"Champion Hill";"Urban";"Completed";2019;19.3;2.28;300;1050880.0
+5703;"England";"E05011098";"Chaucer";"Urban";"Completed";2020;13.33;1.96;300;750836.0
+5704;"England";"E05011099";"Dulwich Hill";"Urban";"Completed";2019;23.0;2.43;300;998829.0
+5705;"England";"E05011100";"Dulwich Village";"Urban";"Completed";2019;22.4;1.86;500;2620820.0
+5706;"England";"E05011101";"Dulwich Wood";"Urban";"Completed";2019;31.1;1.97;550;3016920.0
+5707;"England";"E05011102";"Faraday";"Urban";"Completed";2020;17.22;1.99;360;1101770.0
+5708;"England";"E05011103";"Goose Green";"Urban";"Completed";2019;11.0;1.81;300;1155910.0
+5709;"England";"E05011104";"London Bridge  West Bermondsey";"Urban";"Completed";2020;10.7;1.78;300;1160250.0
+5710;"England";"E05011105";"Newington";"Urban";"Completed";2019;17.0;2.17;300;779173.0
+5711;"England";"E05011106";"North Bermondsey";"Urban";"Completed";2020;17.0;2.17;300;935069.0
+5712;"England";"E05011107";"North Walworth";"Urban";"Completed";2020;10.33;1.76;300;796381.0
+5713;"England";"E05011108";"Nunhead  Queens Road";"Urban";"Completed";2020;25.67;2.52;300;1317620.0
+5714;"England";"E05011109";"Old Kent Road";"Urban";"Completed";2020;10.16;1.73;305;1659730.0
+5715;"England";"E05011110";"Peckham";"Urban";"Completed";2020;15.33;2.08;300;855516.0
+5716;"England";"E05011111";"Peckham Rye";"Urban";"Completed";2020;20.0;2.31;300;1892950.0
+5717;"England";"E05011112";"Rotherhithe";"Urban";"Completed";2020;27.33;2.57;300;1412360.0
+5718;"England";"E05011113";"Rye Lane";"Urban";"Completed";2020;14.0;2.0;300;1272200.0
+5719;"England";"E05011114";"St Georges";"Urban";"Completed";2019;15.0;2.06;300;573163.0
+5720;"England";"E05011115";"St Giles";"Urban";"Completed";2019;22.3;2.4;300;1121170.0
+5721;"England";"E05011116";"South Bermondsey";"Urban";"Completed";2020;16.19;1.96;352;1201320.0
+5722;"England";"E05011117";"Surrey Docks";"Urban";"Completed";2020;21.33;2.37;300;1260590.0
+5822;"England";"E05011217";"Barnehurst";"Urban";"Completed";2020;16.0;2.12;300;2130430.0
+5823;"England";"E05011218";"Belvedere";"Urban";"Completed";2020;19.33;2.28;300;4949290.0
+5824;"England";"E05011219";"Bexleyheath";"Urban";"Completed";2020;19.0;2.26;300;3626160.0
+5825;"England";"E05011220";"Blackfen  Lamorbey";"Urban";"Completed";2020;15.33;2.08;300;2908630.0
+5826;"England";"E05011221";"Blendon  Penhill";"Urban";"Completed";2020;13.33;1.96;300;3374460.0
+5827;"England";"E05011223";"Crook Log";"Urban";"Completed";2020;12.0;1.88;300;2677690.0
+5828;"England";"E05011224";"East Wickham";"Urban";"Completed";2020;10.33;1.76;300;2817860.0
+5829;"England";"E05011225";"Erith";"Urban";"Completed";2020;16.33;2.13;300;2412800.0
+5830;"England";"E05011226";"Falconwood  Welling";"Urban";"Completed";2020;12.0;1.88;300;3261290.0
+5831;"England";"E05011227";"Longlands";"Urban";"Completed";2020;14.29;2.02;301;1887350.0
+5832;"England";"E05011228";"Northumberland Heath";"Urban";"Completed";2020;7.0;1.47;300;1714020.0
+5833;"England";"E05011229";"St Marys  St James";"Urban";"Completed";2020;28.0;2.59;300;8748380.0
+5834;"England";"E05011230";"Sidcup";"Urban";"Completed";2020;14.33;2.02;300;3990540.0
+5835;"England";"E05011231";"Slade Green  Northend";"Urban";"Completed";2020;7.33;1.51;300;4327380.0
+5836;"England";"E05011232";"Thamesmead East";"Urban";"Completed";2020;16.0;2.12;300;4287630.0
+5837;"England";"E05011233";"West Heath";"Urban";"Completed";2020;14.0;2.0;300;2375500.0
+5838;"England";"E05011234";"Aldborough";"Urban";"Completed";2020;7.0;1.47;300;8501250.0
+5839;"England";"E05011235";"Barkingside";"Urban";"Completed";2020;11.96;1.87;301;1630220.0
+5840;"England";"E05011236";"Bridge";"Urban";"Completed";2020;25.33;2.51;300;3453000.0
+5841;"England";"E05011237";"Chadwell";"Urban";"Completed";2020;6.67;1.44;300;1556090.0
+5842;"England";"E05011238";"Churchfields";"Urban";"Completed";2020;16.33;2.13;300;2016620.0
+5843;"England";"E05011239";"Clayhall";"Urban";"Completed";2020;15.0;2.06;300;2533890.0
+5844;"England";"E05011240";"Clementswood";"Urban";"Completed";2020;6.67;1.44;300;899725.0
+5845;"England";"E05011241";"Cranbrook";"Urban";"Completed";2020;9.33;1.68;300;1491250.0
+5846;"England";"E05011242";"Fairlop";"Urban";"Completed";2020;7.67;1.54;300;2871380.0
+5847;"England";"E05011243";"Fullwell";"Urban";"Completed";2020;14.33;2.02;300;2770480.0
+5848;"England";"E05011244";"Goodmayes";"Urban";"Completed";2020;7.0;1.47;300;1815460.0
+5849;"England";"E05011245";"Hainault";"Urban";"Completed";2020;25.0;2.5;300;5654160.0
+5850;"England";"E05011246";"Ilford Town";"Urban";"Completed";2020;5.77;1.32;312;1062700.0
+5851;"England";"E05011247";"Loxford";"Urban";"Completed";2020;6.0;1.37;300;1068700.0
+5852;"England";"E05011248";"Mayfield";"Urban";"Completed";2020;11.0;1.81;300;1862210.0
+5853;"England";"E05011249";"Monkhams";"Urban";"Completed";2020;42.67;2.86;300;2796200.0
+5854;"England";"E05011250";"Newbury";"Urban";"Completed";2020;11.0;1.81;300;1744290.0
+5855;"England";"E05011251";"Seven Kings";"Urban";"Completed";2020;11.0;1.81;300;1816730.0
+5856;"England";"E05011252";"South Woodford";"Urban";"Completed";2020;14.67;2.04;300;2040910.0
+5857;"England";"E05011253";"Valentines";"Urban";"Completed";2020;14.29;1.93;329;1801670.0
+5858;"England";"E05011254";"Wanstead Park";"Urban";"Completed";2020;28.33;2.6;300;4743360.0
+5859;"England";"E05011255";"Wanstead Village";"Urban";"Completed";2020;20.33;2.32;300;2302660.0
+6034;"England";"E05011462";"Addiscombe East";"Urban";"Completed";2020;15.5;1.81;400;1541030.0
+6035;"England";"E05011463";"Addiscombe West";"Urban";"Completed";2020;13.75;1.72;400;1343500.0
+6036;"England";"E05011464";"Bensham Manor";"Urban";"Completed";2020;10.5;1.53;400;1441910.0
+6037;"England";"E05011465";"Broad Green";"Urban";"Completed";2020;12.25;1.64;400;1952760.0
+6038;"England";"E05011466";"Coulsdon Town";"Urban";"Completed";2020;14.0;1.73;400;4522950.0
+6039;"England";"E05011467";"Crystal Palace  Upper Norwood";"Urban";"Completed";2019;25.6;1.95;500;2583380.0
+6040;"England";"E05011468";"Fairfield";"Urban";"Completed";2020;9.5;1.47;400;1467960.0
+6041;"England";"E05011469";"Kenley";"Urban";"Completed";2019;39.0;1.84;700;5198740.0
+6042;"England";"E05011470";"New Addington North";"Urban";"Completed";2020;16.75;1.87;400;1415270.0
+6043;"England";"E05011471";"New Addington South";"Urban";"Completed";2020;23.64;1.81;550;2489190.0
+6044;"England";"E05011472";"Norbury  Pollards Hill";"Urban";"Completed";2019;11.7;1.85;300;1340890.0
+6045;"England";"E05011473";"Norbury Park";"Urban";"Completed";2019;18.3;2.23;300;2259990.0
+6046;"England";"E05011474";"Old Coulsdon";"Urban";"Completed";2020;37.83;1.98;600;6937340.0
+6047;"England";"E05011475";"Park Hill  Whitgift";"Urban";"Completed";2020;30.0;1.87;600;1988250.0
+6048;"England";"E05011476";"Purley  Woodcote";"Urban";"Completed";2020;31.4;1.98;551;5099040.0
+6049;"England";"E05011477";"Purley Oaks  Riddlesdown";"Urban";"Completed";2019;22.5;1.97;450;2452080.0
+6050;"England";"E05011478";"Sanderstead";"Urban";"Completed";2020;37.88;1.54;1000;7539450.0
+6051;"England";"E05011479";"Selhurst";"Urban";"Completed";2020;12.0;1.62;400;1307810.0
+6052;"England";"E05011480";"Selsdon  Addington Village";"Urban";"Completed";2019;37.5;1.53;1000;5212410.0
+6053;"England";"E05011481";"Selsdon Vale  Forestdale";"Urban";"Completed";2019;46.7;1.58;1002;4910980.0
+6054;"England";"E05011482";"Shirley North";"Urban";"Completed";2020;18.5;1.94;400;3109980.0
+6055;"England";"E05011483";"Shirley South";"Urban";"Completed";2020;35.83;1.96;600;4552010.0
+6056;"England";"E05011484";"South Croydon";"Urban";"Completed";2020;32.36;1.99;550;3945430.0
+6057;"England";"E05011485";"South Norwood";"Urban";"Completed";2019;12.6;1.91;300;2141820.0
+6058;"England";"E05011486";"Thornton Heath";"Urban";"Completed";2019;19.0;2.26;300;1724740.0
+6059;"England";"E05011487";"Waddon";"Urban";"Completed";2020;15.71;1.95;350;3921160.0
+6060;"England";"E05011488";"West Thornton";"Urban";"Completed";2020;9.2;1.83;250;1971800.0
+6061;"England";"E05011489";"Woodside";"Urban";"Completed";2020;13.33;1.96;300;2150910.0
