@@ -122,3 +122,12 @@ displaychart.on('mouseover',function(params){
     map.setFilter('area-tree-layer-highlighted', ['in', 'wardname', params.name]);
 })
 ```
+## Insight Page
+The Insights web page, designed to raise awareness about the importance of tree canopy coverage, features a detailed structure and design focusing on the environmental benefits of trees. Its primary sections include:
+
+###Tree Benefits: Highlighting the numerous advantages trees offer, like air quality improvement and biodiversity enhancement. Interactive elements allow users to explore detailed information.
+###Why it Matters: Discussing the critical role of tree canopy in urban areas, focusing on its multifaceted impacts.
+###Case Study: Featuring a real-world example from Camden Borough, emphasizing the benefits of green spaces on mental health, supported by testimonials and links to external research.
+###References: Providing credible sources for further exploration, with downloadable resources.
+###Contact: Enabling user engagement and feedback.
+The webpage's CSS style, csstest.css, ensures a clean, modern look with a dark green color scheme and responsive design, enhancing readability and user experience. The layout uses flex containers for balanced presentation, and images are designed to be responsive, maintaining aspect ratios.
