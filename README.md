@@ -201,3 +201,86 @@ Technically, insight page deployed:
 ### CSS style 
 The webpage's CSS style, external CSS files are linked for styling (stylestest.css), , ensures a clean, modern look with a dark green color scheme and responsive design, enhancing readability and user experience. The layout uses flex containers for balanced presentation, and images are designed to be responsive, maintaining aspect ratios.
 
+## The Database
+
+### Database Use
+
+In the project the database had two main uses:
+1. Process the large initial datasets to generate a GeoJSON file for a map layer
+2. On request, supply data dynamically to the client via the webserver
+
+### Data Sources and Required Transformation
+
+An existing UK Ward-level GeoJSON flat file (~350MB) was utilised. This file was large, covering the wholes of the UK. For the website's purposes, London data was required. Using the Python scripts, the data was formatted to create files for import into the database and was cleansed removing characters that caused issues during the import. A future iteration of these scripts could be a temporary substitution of the offending characters with a query updating the text to revert to the original format.
+
+#### Sources used:
+ - https://data-forestry.opendata.arcgis.com/datasets/ecba26cfaf9d4b61bddc0e3284348d79_0/explore
+ - https://smallsites.london/wards/
+ - https://data.london.gov.uk/dataset/green-and-blue-cover
+ - https://data.london.gov.uk/dataset/access-public-open-space-and-nature-ward
+
+### Database and Flat File Structure
+
+The GeoJSON data comprised unique OBJECTIDs, ward attributes, and extensive geometry data. Two MySQL tables ( `ward_geo_json` and `ward_geo_json_attributes`) were created. The former storing full records with the OBJECTID, while the latter holding data attributes, excluding geometries. this meant the data ws now queriable. OBJECTIDs serve as primary keys in both tables, balancing data accessibility with query performance.
+
+A table (rcka_ward_codes) was created to hold London Wards. This could then be linked to the previous tables via the wardcode in ward_geo_json_attributes table and to the ward_geo_json through the OBJECTID. These relationships were used to establish the London subset. Python script were employed to extract this subset and generate the GeoJSON for the Mapbox tree canopy layer. This reduced the file size from its origial ~350MB to around 7.5MB.
+
+Additional tables to supplement the map data were added, `public_open_space` and `green_ward_cover`. These are efficiently queried using ward codes as primary keys and indexing search columns. Where ward codes differed, no updates to the original codes were made to maintain data integrity.
+
+
+<img src="./assets/DBSchema.jpg" alt="Database Schema Diagram" title="Database Schema">
+
+To produce real-time query results for the frontend, a view was created using `ward_geo_json_attributes` as the central table. This is the same data used to produce the map layer meaniing the ward codes will have a match. Supplemental data is pulled from the `public_open_space` and `green_ward_cover` tables through left joins. If no match is found, nulls are returned for those fields for the Javascript code to handle.
+
+A database view object was created to abstract away from the underlying tables and present a single object that would then be the only object the NodeJS code was granted access to. Permissioning restrictions on the database meant that the view could not be created on the UCL server but this was fully tested and in operation ahead of migration to the CASA server. Data formatting is executed within the database to reduce frontend processing.
+
+### Security Measures
+
+The web client is granted read-only access, with credentials securely stored outside of GitHub (gitignored). There are SQL injection risks due to input validation being delegated to the web server, a trade-off accepted to retain dynamic query capabilities.
+
+
+## Backend Server
+
+This site's architecture comprises three key components: the frontend, backend server, and backend database. This section covers the backend server, which is distinct from the client frontend browser and runs on a designated infrastructure.
+
+### Technology Stack
+
+The backend server is built using NodeJS. It is responsible for handling requests from the frontend, including serving the default page. The NodeJS app facilitates asynchronous, event-driven interactions, significantly enhancing resource management by freeing up the server post-request processing.
+
+INSERT PPT IMG
+
+#### Express Framework
+
+NodeJS employs the Express library, a web application framework crucial for managing client-server interactions. Express provides straightforward methods for handling low-level communications and request management. 
+
+#### Server Configuration
+
+An 'app' constant is defined the Node code. It is an instance of the 'express' object. This app is bound to a designated port (set in the config file) and listens for client requests.  It manages server application routes, enabling client interactions and configuring specific directories for content serving.
+
+### Primary Routes
+
+Two primary routes are handled:
+
+1. Root route (`/`): Serves the default webpage.
+2. `/getWardData`: Manages requests for supplemental ward information from the MySQL database. This includes validation against SQL injection, with a 400 Bad Request response for validation failures.
+
+#### Security Measures
+
+- **Express-rate-limit**: To enhance security and robustness, implement the 'express-rate-limit' library, limiting requests from single IP addresses. This helps mitigate Denial-of-Service attacks. An express-rate-limiter was included and operational ahead of deployment on the CASA server. This library errors on the UCL server so this functionality has been commented out for this implementation but was fully tested ahead of migration.
+- **MySQL Integration**: Data retrieval is managed via the 'mysql' library. Instead of a single connection, a scalable connection pool is established, handling high request volumes efficiently. Again, the CASA server implementation errors on use of this library so this have been pointed to the single conection for this implementation. The pool connection was tested and operational externally. 
+
+### Data Retrieval and Error Handling
+
+Upon Ward data requests, the MySQL connection (pool) sends select statements to the database, returning results in a JSON object. Server errors (500) are communicated in case of database issues.
+
+#### Dynamic SQL Construction
+
+- A config file specifies database columns for result sets, allowing dynamic SQL construction. The frontend JavaScript code adapts to changes in the supplemental data returned from the database via asynchronous 'await' functionality.
+- Unknown route requests default to a “Cannot GET” response.
+
+#### Logging and Maintenance
+
+Error handling is a critical component of the NodeJS code. Logging on the node server records errors and client interactions, categorized into two separate timestamped log files. This aids in error identification and event sequence analysis. Log files are created daily to streamline file management.
+
+
+
