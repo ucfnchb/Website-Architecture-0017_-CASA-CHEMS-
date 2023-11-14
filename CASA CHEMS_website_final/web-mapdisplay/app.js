@@ -20,6 +20,7 @@ app.use(express.static(__dirname));
 app.use('/mapjson', express.static(path.join(__dirname, 'mapjson')));
 app.use('/js', express.static(path.join(__dirname, 'js')));
 
+/*
 const limiterLib = require('express-rate-limit');
 
 //set request rate limits
@@ -32,6 +33,7 @@ const limiter = limiterLib.rateLimit({
 
 // Apply the rate limiting middleware to all requests.
 app.use(limiter)
+*/
 
 //start up create a connection pool with the database
 const config = require('./config'); // Import config
