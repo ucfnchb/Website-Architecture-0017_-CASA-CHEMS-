@@ -131,17 +131,61 @@ The Insights web page, designed to raise awareness about the importance of tree 
 - References: Providing credible sources for further exploration, with downloadable resources.
 - contact: Enabling user engagement and feedback.
 
+### 
 Technically, insight page deployed: 
 
 - Benefits Section: Lists tree benefits (like "Improved Air Quality") and provides a detailed explanation in a hidden div (<div id="introduction">), which becomes visible upon interaction.
 - Interactive 'Read More' Button: JavaScript is used to toggle the visibility of the detailed benefits section. The readMoreButton.addEventListener script changes the text and display state of the detailed section upon clicking.
-- Images: Images are included (<img src="...">) to visually support the content.
+```
+  <!-- readmore function   -->
+        <button id="readMoreButton">Read More</button>
+      
+        <script>
+          
+          const introduction = document.getElementById('introduction');
+          const readMoreButton = document.getElementById('readMoreButton');
+      
+          readMoreButton.addEventListener('click', function() {
+            if (introduction.style.display === 'none') {
+              introduction.style.display = 'block';
+              readMoreButton.textContent = 'Read Less';
+            } else {
+              introduction.style.display = 'none';
+              readMoreButton.textContent = 'Read More';
+            }
+          });
+        </script>
+```
+  
+- Images: Images are included to visually support the content which is done by excel. 
 - Impact and Why It Matters Section: Further elaboration on the environmental, social, and economic benefits of trees, with another detailed section and an image.
 - Case Study Section: Highlights a specific example in Camden, London, including challenges, descriptions, and goals, with links to external articles and an image.
+```
+ <!-- testimonials where reader can be direct to the webpage of the news -->
+          <p><strong>Testimonials:</strong> <br><a href="https://www.forestryjournal.co.uk/news/23186215.direct-link-happiness-tree-cover-london/"> <br> Direct link between happiness and tree cover in London</a> <br>London's happiest borough is also one of its greenest,with new research suggesting there is a direct correlation between the two. <br> <br><a href="https://worldhappiness.report/ed/2020/how-environmental-quality-affects-our-happiness/">How Environmental Quality Affects Our Happiness</a> <br> Green spaces are beneficial for nearby residents. There is an established evidence base documenting the positive effects of green spaces on residents' health.</p>
+```
+
 - References Section: Offers downloadable resources and articles, enhancing the credibility and depth of information provided.
+```
+<section class="references">
+      <h2>References</h2>
+      <ul>
+        <br>
+        <li><a href="https://www.camden.gov.uk/documents/20142/5268201/Camden+Tree+Planting+Strategy.pdf" download>Camden Tree Planting Strategy</a></li>
+        <br>
+      
+        <li><a href="Articles/HappinessGrowsOnTrees.pdf" download>Happiness grows on trees</a></li>
+        <br>
+
+        <li><a href="Articles/Trees Report Fina.pdf" download>Why we need more trees in the UK</a></li>
+        <br>
+      </ul>
+    </section>
+```
+
 - Contact Section: In the footer, contact information is provided, enhancing user engagement and communication.
 
-
+```
 ### CSS style 
-The webpage's CSS style, csstest.css, ensures a clean, modern look with a dark green color scheme and responsive design, enhancing readability and user experience. The layout uses flex containers for balanced presentation, and images are designed to be responsive, maintaining aspect ratios.
+The webpage's CSS style, external CSS files are linked for styling (stylestest.css), , ensures a clean, modern look with a dark green color scheme and responsive design, enhancing readability and user experience. The layout uses flex containers for balanced presentation, and images are designed to be responsive, maintaining aspect ratios.
 
