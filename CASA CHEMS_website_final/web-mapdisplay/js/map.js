@@ -1,19 +1,4 @@
-//Mapbox API TOKEN
-//const mapsecrets = require('/mapsecrets.js'); // Import the mapsecrets file
 
-// Access the secret
-//const API_TOKEN_Mapbox = mapsecrets.API_TOKEN_MB;
-
-API_TOKEN_Mapbox = '';
-//retreive API token
-fetch(`/getApiKey`)
-.then(response => response.json())
-.then(data => {
-    API_TOKEN_Mapbox = data;
-    console.log("data: " + data);
-    console.log("api_tok:" + API_TOKEN_Mapbox)
-});
-console.log("API Token: " + API_TOKEN_Mapbox);
 
 API_TOKEN_Mapbox = 'pk.eyJ1IjoidnNpZ25vIiwiYSI6ImNrc2IxcjV0ejAyNnQydXFxdG14Nnk4ZHcifQ.2YkWTQsNvu4cFyJWsHKSiw';
 
