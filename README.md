@@ -1,4 +1,8 @@
 # Website-Architecture-0017_-CASA-CHEMS-
+The **CASA CHEMS_website_final** folder stores our final website code [Website URL](http://casa0017.cetools.org:8864/).
+The **Data** folder stores the data we use
+The **Files for progress-testing** folder stores our iterations and tests
+The **web-backup with local data** folder stores backup website hosted on GitHub [Backup URL](https://chacehh-h.github.io/ ) If the first URL does not work, please use the backup website URL to access
 
 ### Interactive Map Overview
 Welcome to Our Environmental Awareness Website! When you visit our site, you'll be greeted by an intuitive and informative map that provides a comprehensive view of tree canopy coverage. This map, powered by Mapbox, offers dynamic layers and smooth navigation to explore both individual trees and broader areas. It's an engaging way to dive into our extensive data repository.
