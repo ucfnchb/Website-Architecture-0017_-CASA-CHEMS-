@@ -1,5 +1,18 @@
 # Website-Architecture-0017_-CASA-CHEMS-
 
+### Interactive Map Overview
+Welcome to Our Environmental Awareness Website! When you visit our site, you'll be greeted by an intuitive and informative map that provides a comprehensive view of tree canopy coverage. This map, powered by Mapbox, offers dynamic layers and smooth navigation to explore both individual trees and broader areas. It's an engaging way to dive into our extensive data repository.
+
+### Insight Page: Spreading Environmental Awareness
+Our Insight Page is designed to educate visitors about the importance of tree canopies. It's structured to deliver information on various environmental benefits such as improved air quality, mental health, and biodiversity. The page includes sections like Tree Benefits, Why Tree Canopy Matters, a detailed Camden Borough case study, references, and a contact section. Styled with csstest.css, it presents information in an appealing and responsive design, making it an effective educational tool.
+
+### Advanced Mapping and Data Visualization
+In this recent development phase, we've integrated an advanced mapping system. Using page.html, map.js, and map.css, we've harnessed the power of Mapbox for dynamic map displays. This includes features like zoom controls, geojson sources, and interactive elements like click and hover events for in-depth data exploration. The integration of Echarts for bar charts and a VisualMap for color-coded information enriches the user experience, making our map a powerful tool for understanding and exploring tree canopy data.
+
+### Database Development: Efficient and Accessible
+Our backend development focused on aligning with system requirements and data availability. Opting for Ward-level GeoJSON, we used Python for data preparation and SQL for database structure. Our database includes GeoJSON records, attributes, and additional environmental data. The frontend interacts seamlessly with this database through SQL queries, managed by a NodeJS and Express backend. This setup guarantees efficient data handling and retrieval, supported by a configuration file that specifies SQL query structures. Our robust logging system ensures smooth and secure client-server interactions.
+
+We're excited to share this platform with you and hope it inspires a deeper appreciation and understanding of our environment and the crucial role of tree canopies. Your journey towards environmental awareness starts here!
 
 ## Map page
 The website map is displayed using Map page.html, map.js and map.css. 
