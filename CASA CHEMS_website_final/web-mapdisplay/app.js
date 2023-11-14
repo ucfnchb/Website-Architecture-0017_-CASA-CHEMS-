@@ -109,8 +109,9 @@ app.get('/getWardData', (req, res) => {
         res.status(400);
         return;
     }
-
-    let sql = `select borough as Borough` + sqlCols + ` FROM warddata;`;
+    //***server restrictions mean view cannot be created revert to query on tables
+    //let sql = `select borough as Borough` + sqlCols + ` FROM warddata;`;
+    let sql = `select p.borough as Borough` + sqlCols + ` FROM ward_geo_json_attributes as a  LEFT JOIN public_open_space as p ON a.wardcode = p.ward_code  LEFT JOIN green_ward_cover as g ON a.wardcode = g.ward_code where a.wardcode = '` + wardCode + `';`;
     //console.log(sql);
 
     pool.query(sql, (err, results) => {
