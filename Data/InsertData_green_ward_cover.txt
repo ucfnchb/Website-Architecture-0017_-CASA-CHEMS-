@@ -1,4 +1,4 @@
-INSERT INTO green_ward_cover(`lb_name`,`lb_code`,`ward_code`,`ward_name`,`ward_area_hectare`,`green_area_hectare`,`blue_area_hectare`,`green+blue_area_hectare`,`percent_green`,`percent_blue`,`percent_green+blue`) VALUES 
+INSERT INTO green_ward_cover(`lb_name`,`lb_code`,`ward_code`,`ward_name`,`ward_area_hectare`,`green_area_hectare`,`blue_area_hectare`,`green_blue_area_hectare`,`percent_green`,`percent_blue`,`percent_green_blue`) VALUES 
 ('Barking and Dagenham','E09000002','E05000026','Abbey',128.292,35.7143291307578,3.18563838246585,38.8999675132236,27.8383134807765,2.48311537934232,30.3214288601188), 
 ('Barking and Dagenham','E09000002','E05000027','Alibon',136.442,62.677542779572,0.032920530006879,62.7104633095789,45.9371328326849,0.0241278565301586,45.9612606892151), 
 ('Barking and Dagenham','E09000002','E05000028','Becontree',128.809,46.4687546983987,0.01794187051767,46.4866965689164,36.075704879627,0.0139290503906326,36.0896339300176), 
