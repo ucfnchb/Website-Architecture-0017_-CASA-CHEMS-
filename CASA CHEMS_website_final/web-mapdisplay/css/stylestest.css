@@ -396,4 +396,7 @@ button:hover {
   li.dropdown {
     display: inline-block;
   }
+  strong{
+    font-size: 16px;
+  }
 }

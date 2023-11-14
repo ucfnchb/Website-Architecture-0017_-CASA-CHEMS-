@@ -400,6 +400,7 @@ displaychart.on('mouseover',function(params){
 
 //button to hide the bar chart
 function displaybarcharts() {
+    var chartbox =document.getElementById("sidebarbox");
     var chart = document.getElementById("barchart111");
     var buttonimg = document.getElementById("hidebtn");
     // hide the bar chart
@@ -407,9 +408,12 @@ function displaybarcharts() {
         chart.style.display = "block";
         //Change button image
         buttonimg.src = "images/listbutton2.png";
+        chartbox.style.height = "50%";
+        //chartbox.style.height = "50px";
     } else {
         chart.style.display = "none";
         buttonimg.src = "images/listbutton1.png";
+        chartbox.style.height = "50px";
     }
 }
 

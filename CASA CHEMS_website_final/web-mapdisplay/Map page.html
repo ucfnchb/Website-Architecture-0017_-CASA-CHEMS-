@@ -2,7 +2,7 @@
 <head>
  <title> Map Page </title>
  <link rel="icon" type="image/x-icon" href="./images/tree.ico">
- <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1"/>
  <link rel="stylesheet" href="./css/Map.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -22,7 +22,7 @@
   <!-- top navigation bar -->
   <ul class="topbar">
     <!-- Website name -->
-    <li style="float:left"><a href="#Lnading" class="lia" style="font-size: 22px;"><strong> UCL CASA CHEMS-London Tree Canopy</strong></a></li>
+    <li style="float:left"><a href="#Lnading" class="lia" style="font-size: 22px;"><strong>CHEMS-London Tree Canopy</strong></a></li>
     <!-- Page jump button drop-down -->
     <li style="float:right" class="dropdown">
       <a class="lia" href="javascript:void(0)" class="dropbtn"><i class="fa fa-bars"></i></a>
@@ -42,9 +42,9 @@
     <!-- information bar -->
     <div id="popup"></div>
     <!-- echart bar chart -->
-    <ul class="sidebar">
+    <ul class="sidebar" id="sidebarbox">
       <!-- Hide bar chart -->
-      <li class="sidebtn" style="float:right"><img id="hidebtn" src="images/listbutton2.png" alt="" onclick="displaybarcharts()"></li>
+      <li class="sidebtn" style="float:left"><img id="hidebtn" src="images/listbutton2.png" alt="" onclick="displaybarcharts()"></li>
       <!-- bar chart -->
       <li id="barchart111"><div id="barchart"></div></li>
     </ul>

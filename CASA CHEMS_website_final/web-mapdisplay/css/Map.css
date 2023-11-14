@@ -78,7 +78,7 @@ li a:hover,
 }
 #popup {
   position: fixed;
-  top: 10%;
+  top: 20%;
   left: 0;
   opacity: 0.9;
   background-color: rgb(255, 255, 255);
@@ -87,20 +87,11 @@ li a:hover,
 }
 
 
-.sidebar{
-  position: fixed;
-  top: 50%;
-  right: 0;
-  transform: translate(-0%, -50%);
-  text-align: center;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
 #barchart111{
   /* margin-top: 50px; */
   width: 400px;
-  height: 600px;
+  height: 100%;
+  float: right;
 }
 #barchart{
   width: 100%;
@@ -120,11 +111,23 @@ li a:hover,
 #hidebtn{
   width: 100%;
   height: 100%;
+  z-index: 999;
 }
 .mapboxgl-ctrl-geocoder {
   font-size: 30px;
 }
 @media screen and (min-width: 600px) {
+  .sidebar{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translate(-0%, -50%);
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 60%;
+  }
   li.dropdown {
     display: none;
   }
@@ -136,5 +139,26 @@ li a:hover,
 
   li.dropdown {
     display: inline-block;
+  }
+  strong{
+    font-size: 16px;
+  }
+
+  .sidebar{
+    position:absolute;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    /* padding-top: 30%; */
+    bottom:0;
+    width: 100%;
+    height: 60%;
+    padding: 0;
+  }
+  #barchart111{
+    /* margin-top: 50px; */
+    width: 100%;
+    height: 100%;
+    /* float: right; */
   }
 }
