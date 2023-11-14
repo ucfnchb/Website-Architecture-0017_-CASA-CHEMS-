@@ -201,6 +201,7 @@ Technically, insight page deployed:
 ### CSS style 
 The webpage's CSS style, external CSS files are linked for styling (stylestest.css), , ensures a clean, modern look with a dark green color scheme and responsive design, enhancing readability and user experience. The layout uses flex containers for balanced presentation, and images are designed to be responsive, maintaining aspect ratios.
 
+
 ## The Database
 
 ### Database Use
@@ -228,7 +229,9 @@ A table (rcka_ward_codes) was created to hold London Wards. This could then be l
 Additional tables to supplement the map data were added, `public_open_space` and `green_ward_cover`. These are efficiently queried using ward codes as primary keys and indexing search columns. Where ward codes differed, no updates to the original codes were made to maintain data integrity.
 
 
-<img src="./assets/DBSchema.jpg" alt="Database Schema Diagram" title="Database Schema">
+
+<img src="./assets/DBSchema.jpg" alt="Diagram of Database Schema" title="Database Schema">
+The database Schema
 
 To produce real-time query results for the frontend, a view was created using `ward_geo_json_attributes` as the central table. This is the same data used to produce the map layer meaniing the ward codes will have a match. Supplemental data is pulled from the `public_open_space` and `green_ward_cover` tables through left joins. If no match is found, nulls are returned for those fields for the Javascript code to handle.
 
@@ -247,7 +250,7 @@ This site's architecture comprises three key components: the frontend, backend s
 
 The backend server is built using NodeJS. It is responsible for handling requests from the frontend, including serving the default page. The NodeJS app facilitates asynchronous, event-driven interactions, significantly enhancing resource management by freeing up the server post-request processing.
 
-INSERT PPT IMG
+<img src="./assets/ApplicationLayers.jpg" alt="Diagram of 3 layers of the webite: Frontend, NodeJS server and the database" title="Application Client/Server Structure">
 
 #### Express Framework
 
@@ -264,6 +267,63 @@ Two primary routes are handled:
 1. Root route (`/`): Serves the default webpage.
 2. `/getWardData`: Manages requests for supplemental ward information from the MySQL database. This includes validation against SQL injection, with a 400 Bad Request response for validation failures.
 
+
+/getWardData API in Node
+```
+    //use ward code
+    const wardCode = req.query.wardCode;
+
+    // restrict wardcode request to 9 chars and all must be alphanumeric
+    // this is basic validation and helps prevent client SQL injection
+    if (wardCode.length != 9 || ! isAlphanumeric(wardCode)){
+        const errMsg = `Bad request in getWardData: ${wardCode}`;
+        console.error(errMsg);
+        logIssue(errMsg);
+        res.status(400);
+        return;
+    }
+    //***server restrictions mean view cannot be created reverting to query on tables
+    //let sql = `select borough as Borough` + sqlCols + ` FROM warddata;`;
+    let sql = `select p.borough as Borough` + sqlCols + ` FROM ward_geo_json_attributes as a  LEFT JOIN public_open_space as p ON a.wardcode = p.ward_code  LEFT JOIN green_ward_cover as g ON a.wardcode = g.ward_code where a.wardcode = '` + wardCode + `';`;
+
+    pool.query(sql, (err, results) => {
+      if (err) {
+        console.error('Error connecting to the database:', err);
+        logIssue('Error connecting to the database:', err);
+        res.status(500);
+        return;
+      }
+     
+      res.status(200).json(results);
+      
+    });
+```
+This is then processed by the client in an asychronous function to dynamically adust to the response received
+```
+      // Continue with the data once it's available
+      var dataFromDB = "";
+      //data is nested so need to iterate through it
+      //create a stack to pop off each data record
+      const stack = [{ obj: data, prefix: '' }];
+
+      while (stack.length > 0) {
+          //pop the next record  
+          const { obj, prefix } = stack.pop();
+  
+          for (const key in obj) {
+              //if key is an object, it's not the actual record so skip
+              if (typeof obj[key] === 'object') {
+                  stack.push({ obj: obj[key], prefix: `${prefix}${key}.` });
+              } else {
+                  const attributeName = `${key}`;
+                  const attributeValue = obj[key];
+                  
+                  dataFromDB += attributeName + ": " + attributeValue + "<BR>";
+              }
+          }
+      }
+```
+
 #### Security Measures
 
 - **Express-rate-limit**: To enhance security and robustness, implement the 'express-rate-limit' library, limiting requests from single IP addresses. This helps mitigate Denial-of-Service attacks. An express-rate-limiter was included and operational ahead of deployment on the CASA server. This library errors on the UCL server so this functionality has been commented out for this implementation but was fully tested ahead of migration.
@@ -278,9 +338,31 @@ Upon Ward data requests, the MySQL connection (pool) sends select statements to 
 - A config file specifies database columns for result sets, allowing dynamic SQL construction. The frontend JavaScript code adapts to changes in the supplemental data returned from the database via asynchronous 'await' functionality.
 - Unknown route requests default to a “Cannot GET” response.
 
+From confid.js file
+```
+//Configurable Columns for SQL Query
+    Designated: {
+      Use: true,
+      Text: "a.designated as 'Designated'",
+    },
+    Status: {
+      Use: true,
+      Text: "a.status as 'Status'", 
+    },
+    ...
+    ...
+```
+Processed by Node code
+```
+    Object.entries(config.wardQueryCols).forEach(([columnName, columnConfig]) => {
+      if (columnConfig.Use) {
+        sqlCols += ", " + columnConfig.Text;
+      }
+    });
+```
+
 #### Logging and Maintenance
 
 Error handling is a critical component of the NodeJS code. Logging on the node server records errors and client interactions, categorized into two separate timestamped log files. This aids in error identification and event sequence analysis. Log files are created daily to streamline file management.
-
 
 
