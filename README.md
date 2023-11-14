@@ -185,7 +185,6 @@ Technically, insight page deployed:
 
 - Contact Section: In the footer, contact information is provided, enhancing user engagement and communication.
 
-```
 ### CSS style 
 The webpage's CSS style, external CSS files are linked for styling (stylestest.css), , ensures a clean, modern look with a dark green color scheme and responsive design, enhancing readability and user experience. The layout uses flex containers for balanced presentation, and images are designed to be responsive, maintaining aspect ratios.
 
