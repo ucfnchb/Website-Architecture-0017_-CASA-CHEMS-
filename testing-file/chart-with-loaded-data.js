@@ -1,5 +1,3 @@
-
-
 API_TOKEN_Mapbox = 'pk.eyJ1IjoidnNpZ25vIiwiYSI6ImNrc2IxcjV0ejAyNnQydXFxdG14Nnk4ZHcifQ.2YkWTQsNvu4cFyJWsHKSiw';
 
 mapboxgl.accessToken = API_TOKEN_Mapbox;
@@ -16,7 +14,7 @@ const INITIAL_VIEW_STATE = {
 //lowest level map display
 const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v9',
+    style: 'mapbox://styles/mapbox/streets-v10',
     interactive: true,
     center: [INITIAL_VIEW_STATE.longitude, INITIAL_VIEW_STATE.latitude],
     zoom: INITIAL_VIEW_STATE.zoom,
@@ -89,7 +87,7 @@ map.on('load', () => {
         },//Find geojson
         'filter': ['in', 'wardcode', ''],
         'filter': ['in', 'wardname', '']
-    }, 'settlement-label');
+    }, 'housenum-label');
 
     
     //Map click event
@@ -129,7 +127,6 @@ map.on('load', () => {
         map.fitBounds(bounds, {
             padding: 20
         });
-
 
     });
 
@@ -252,6 +249,8 @@ async function fetchWardData(wardCode, description) {
 
             // Continue with the data once it's available
             var dataFromDB = "";
+            var pctgreen = 0.0;
+            var pctblue = 0.0;
             //data is nested so need to iterate through it
             //create a stack to pop off each data record
             const stack = [{ obj: data, prefix: '' }];
@@ -269,6 +268,15 @@ async function fetchWardData(wardCode, description) {
                         const attributeValue = obj[key];
                         //console.log(`Attribute Name: ${attributeName}, Attribute Value: ${attributeValue}`);
                         dataFromDB += attributeName + ": " + attributeValue + "<BR>";
+                              if (attributeName == "% Blue")
+                        {
+                            pctblue = attributeValue;
+                        }
+                        if (attributeName == "% Green")
+                        {
+                            pctgreen = attributeValue;
+                        }
+
                     }
                 }
             }
@@ -276,10 +284,10 @@ async function fetchWardData(wardCode, description) {
             if (dataFromDB.length == 0){  
                 dataFromDB =  "<BR>Supplemental data not available for this ward";
             }
-            //Display area information after clicking
-            document.getElementById("popup").innerHTML = description + dataFromDB;
+            //display area information after clicking
+            document.getElementById("popup").innerHTML = description + '<div id="chart-container" style="height: 400px; width: 90%;"></div>'; //put the chart here 
+            displayPopupChart(pctblue, pctgreen);
             return 1;
-
 
     } catch (error) {
         //if this errors, just show the data from the GeoJSON flat file
@@ -288,8 +296,67 @@ async function fetchWardData(wardCode, description) {
         return 0;
     }
 }
+//Echarts bar chart
+//information popup chart showing the %blue and %green coverage
+function displayPopupChart(bluePercentage, greenPercentage) {
+    var popupChart = echarts.init(document.getElementById('chart-container'));
 
-
+    popupChart.setOption({
+        tooltip: { 
+            trigger: 'axis', 
+            axisPointer: { type: 'shadow' } 
+        },
+        legend: { 
+            data: ['Blue Coverage', 'Green Coverage'],
+            bottom: 0 
+        },
+        grid: {
+            left: '3%',
+            right: '20%',
+            bottom: '20%',
+            containLabel: true
+        },
+        xAxis: {
+            type: 'category',
+            data: ['Coverage'],
+            axisTick: { show: false }
+        },
+        yAxis: {
+            type: 'value',
+            max: 100 
+        },
+        series: [
+            {
+                name: 'Blue Coverage',
+                type: 'bar',
+                stack: 'total',
+                label: { 
+                    show: true,
+                    position: 'right',
+                    formatter: '{c} %',
+                    fontSize: 10,  
+                    color: '#000',  
+                    distance: 10   
+                },
+                data: [bluePercentage]
+            },
+            {
+                name: 'Green Coverage',
+                type: 'bar',
+                stack: 'total',
+                label: { 
+                    show: true,
+                    position: 'right', 
+                    formatter: '{c} %',
+                    fontSize: 10,  
+                    color: '#000',  
+                    distance: 10  
+                },
+                data: [greenPercentage]
+            }
+        ]
+    });
+}
 
 //Echarts bar chart
 //bar chart showing tree cover for area

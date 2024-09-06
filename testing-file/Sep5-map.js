@@ -1,7 +1,4 @@
 
-
-API_TOKEN_Mapbox = 'pk.eyJ1IjoidnNpZ25vIiwiYSI6ImNrc2IxcjV0ejAyNnQydXFxdG14Nnk4ZHcifQ.2YkWTQsNvu4cFyJWsHKSiw';
-
 mapboxgl.accessToken = API_TOKEN_Mapbox;
 
 //Initialize map view
@@ -16,7 +13,7 @@ const INITIAL_VIEW_STATE = {
 //lowest level map display
 const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v9',
+    style: 'mapbox://styles/mapbox/light-v10',
     interactive: true,
     center: [INITIAL_VIEW_STATE.longitude, INITIAL_VIEW_STATE.latitude],
     zoom: INITIAL_VIEW_STATE.zoom,
@@ -75,7 +72,7 @@ map.on('load', () => {
                 0.1,
                 0.9
             ]
-        },//Display geographic labels on all layers
+	},//Display geographic labels on all layers
     }, 'housenum-label');
 
     //Add a highlight layer, which will not be displayed initially. After clicking with the mouse, fill the border to highlight the area.
@@ -89,13 +86,13 @@ map.on('load', () => {
         },//Find geojson
         'filter': ['in', 'wardcode', ''],
         'filter': ['in', 'wardname', '']
-    }, 'settlement-label');
+    }, 'housenum-label');
 
-    
+
     //Map click event
     map.on('click', 'area-tree-layer', (e) => {
         var wardCode = e.features[0].properties.wardcode;
-        
+
         //Build the popup text
         var description = ("Area Name: " + e.features[0].properties.wardname + '<br>' + "Coverage: " + Number(e.features[0].properties.percancov).toFixed(2) + " %" + '<br>' + "Survey Year: " + e.features[0].properties.survyear + '<br>' + "Ward Area: "+ Number(e.features[0].properties.warea).toFixed(2) + " m<sup>2</sup>" + '<br>');
         //console.log(description);
@@ -109,17 +106,17 @@ map.on('load', () => {
             [e.point.x - 2, e.point.y - 2],
             [e.point.x + 2, e.point.y + 2]
         ];
-        //Find geojson related features
+	//Find geojson related features
         const selectedFeatures = map.queryRenderedFeatures(bbox, {
             layers: ['area-tree-layer']
         });
-        const wardcode = selectedFeatures.map(
+	const wardcode = selectedFeatures.map(
             (feature) => feature.properties.wardcode
         );
-        //Filter, show highlight layer
+	//Filter, show highlight layer
         console.log(wardcode);
         map.setFilter('area-tree-layer-highlighted', ['in', 'wardcode', ...wardcode]);
-        
+
         //Zoom to click area
         //Because the layer is a polygon composed of multiple longitude and latitude coordinates, need to reduce the coordinate array first, and then use fitBounds to jump to the area.
         var coordinates = e.features[0].geometry.coordinates[0];
@@ -169,7 +166,7 @@ map.on('load', () => {
                 hover: false
             });
         }
-        hoveredPolygonId = null;
+	hoveredPolygonId = null;
     });
 });
 
@@ -178,7 +175,7 @@ const geocoder = new MapboxGeocoder({
     // Initialize the geocoder
     accessToken: mapboxgl.accessToken,
     placeholder: 'Search for places',
-    mapboxgl: mapboxgl, 
+    mapboxgl: mapboxgl,
     marker: false
 });
 
@@ -204,7 +201,7 @@ $.ajax({
             all_wards[data.features[i].properties.wardname] = data.features[i].properties.wardcode;
             ward_coord[data.features[i].properties.wardname] = getCoords(data.features[i].geometry.coordinates);
         }
-        displaylist(data);
+	displaylist(data);
     },
 });
 
@@ -217,7 +214,7 @@ function getCoords(geom){
     var coords = "";
     var i = 0;
 
-    
+
     while (i < textLen){
         i += 1;
         if (coords.length == 0) {
@@ -233,15 +230,15 @@ function getCoords(geom){
                 coords = "[" + coords + "]";
                 return coords;
             }
-        }
-    } 
+	}
+    }
     return coords;
 }
 
 //using async function to display the data from the database when returned,
 // otherwise execution continues before data is received
 async function fetchWardData(wardCode, description) {
-    
+
     try {
             const response = await fetch(`/getWardData?wardCode=${wardCode}`);
             //use await to process when node returns the data from the DB
@@ -252,14 +249,16 @@ async function fetchWardData(wardCode, description) {
 
             // Continue with the data once it's available
             var dataFromDB = "";
+            var pctgreen = 0.0;
+            var pctblue = 0.0;
             //data is nested so need to iterate through it
             //create a stack to pop off each data record
             const stack = [{ obj: data, prefix: '' }];
 
             while (stack.length > 0) {
-                //pop the next record  
+                //pop the next record
                 const { obj, prefix } = stack.pop();
-        
+
                 for (const key in obj) {
                     //if key is an object, it's not the actual record
                     if (typeof obj[key] === 'object') {
@@ -269,27 +268,94 @@ async function fetchWardData(wardCode, description) {
                         const attributeValue = obj[key];
                         //console.log(`Attribute Name: ${attributeName}, Attribute Value: ${attributeValue}`);
                         dataFromDB += attributeName + ": " + attributeValue + "<BR>";
+                              if (attributeName == "% Blue")
+                        {
+                            pctblue = attributeValue;
+                        }
+                        if (attributeName == "% Green")
+                        {
+                            pctgreen = attributeValue;
+                        }
+
                     }
                 }
             }
             //if query returns no records, inform user
-            if (dataFromDB.length == 0){  
+            if (dataFromDB.length == 0){
                 dataFromDB =  "<BR>Supplemental data not available for this ward";
             }
-            //Display area information after clicking
-            document.getElementById("popup").innerHTML = description + dataFromDB;
+            //display area information after clicking
+            document.getElementById("popup").innerHTML = description + '<div id="chart-container" style="height: 400px; width: 80%;"></div>'; //put the chart here
+            displayPopupChart(pctblue, pctgreen);
             return 1;
-
 
     } catch (error) {
         //if this errors, just show the data from the GeoJSON flat file
-        document.getElementById("popup").innerHTML = description + "<BR>Supplemental data not available for this ward";  
+        document.getElementById("popup").innerHTML = description + "<BR>Supplemental data not available for this ward";
         console.error('Error:', error);
         return 0;
     }
 }
+//information popup chart showing the %blue and %green coverage
+function displayPopupChart(bluePercentage, greenPercentage) {
+    var popupChart = echarts.init(document.getElementById('chart-container'));
 
-
+    popupChart.setOption({
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: { type: 'shadow' }
+        },
+	legend: {
+            data: ['Blue Coverage', 'Green Coverage'],
+            bottom: 0
+        },
+	grid: {
+            left: '3%',
+            right: '30%',
+            bottom: '20%',
+            containLabel: true
+        },
+	xAxis: {
+            type: 'category',
+            data: ['Coverage'],
+            axisTick: { show: false }
+        },
+	yAxis: {
+            type: 'value',
+            max: 100
+        },
+	series: [
+            {
+             	name: 'Blue Coverage',
+                type: 'bar',
+                stack: 'total',
+                label: {
+                    show: true,
+                    position: 'right',
+                    formatter: '{c} %',
+                    fontSize: 10,
+                    color: '#000',
+                    distance: 10
+                },
+                data: [bluePercentage]
+            },
+            {
+             	name: 'Green Coverage',
+                type: 'bar',
+                stack: 'total',
+                label: {
+                    show: true,
+                    position: 'right',
+                    formatter: '{c} %',
+                    fontSize: 10,
+                    color: '#000',
+                    distance: 10
+                },
+                data: [greenPercentage]
+            }
+	]
+    });
+}
 
 //Echarts bar chart
 //bar chart showing tree cover for area
@@ -301,17 +367,17 @@ function displaylist(data) {
             x: 'center',
             y: 'top',
         },
-        grid: {
+	grid: {
             containLabel: true
         },
-        xAxis: {
+	xAxis: {
             type: 'value',
         },
-        yAxis: {
+	yAxis: {
             type: 'category',
             data: y_data,
         },
-        visualMap: {
+	visualMap: {
             orient: 'horizontal',
             left: 'center',
             min: 0,
@@ -321,15 +387,15 @@ function displaylist(data) {
             inRange: {
                 color: ['#edf8e9', '#005a32']
             }
-        },
-        series: [{
+	},
+	series: [{
             name: 'conapy',
             type: 'bar',
             data: x_data,
             sort:'descending',
         }],
 
-        backgroundColor: '#f0f0f0',
+	backgroundColor: '#f0f0f0',
         //Show scroll bars
         dataZoom: [{
                 type: "slider",
@@ -338,38 +404,38 @@ function displaylist(data) {
                 yAxisIndex: [0],
             },
             {
-                type: "inside", 
+             	type: "inside",
                 yAxisIndex: [0],
                 start: 0,
                 end: 40,
-                zoomOnMouseWheel: false, 
-                moveOnMouseWheel: true, 
-                moveOnMouseMove: true 
+                zoomOnMouseWheel: false,
+                moveOnMouseWheel: true,
+                moveOnMouseMove: true
             }
-        ],
+	],
     }, true);
 }
 //Click the bar to zoom to the area location
 displaychart.on('click', function (params) {
-    //Filter geojson data   
+    //Filter geojson data
     var features = map.querySourceFeatures('area-tree', {
         sourceLayer: 'area-tree-layer',
         filter: ["==", 'wardname', params.name]
     });
-  
+
     //if features undefined then zoom out and try again
     if (typeof features !== 'undefined'){
         //console.log("Zooming out to " + params.name);
         //zoom out first
         map.flyTo({center: [INITIAL_VIEW_STATE.longitude, INITIAL_VIEW_STATE.latitude], essential: false, zoom:10});
- 
+
         //Filter geojson data
         features = map.querySourceFeatures('area-tree', {
             sourceLayer: 'area-tree-layer',
             filter: ["==", 'wardname', params.name]
         });
 
-        //if zooming out, clear the popup data
+	//if zooming out, clear the popup data
         document.getElementById("popup").innerHTML = "";
     }
 
@@ -381,13 +447,13 @@ displaychart.on('click', function (params) {
     map.fitBounds(bounds, {
         padding: 20
     });
-    
+
     //get ward code
     var wardCode = all_wards[params.name];
 
     //Show area information
-    var description = ("Area name: " + features[0].properties.wardname + '<br>' + "Coverage: " + Number(features[0].properties.percancov).toFixed(2) + " %"+ '<br>' + "survyear: " +features[0].properties.survyear + '<br>' + "warea: "+ Number(features[0].properties.warea).toFixed(2) +" m<sup>2</sup>");
-    
+    var description = ("Area name: " + features[0].properties.wardname + '<br>' + "Coverage: " + Number(features[0].properties.percancov).toFixed(2) + " %"+ '<br>' + "survyear: " +features[0].properties.survyear + '<br>' + "warea: "+ Number(f$
+
     document.getElementById("popup").innerHTML = description;
     map.setFilter('area-tree-layer-highlighted', ['in', 'wardname', params.name]);
 
@@ -412,10 +478,15 @@ function displaybarcharts() {
         chartbox.style.height = "50%";
         //chartbox.style.height = "50px";
     } else {
-        chart.style.display = "none";
+	chart.style.display = "none";
         buttonimg.src = "images/listbutton1.png";
         chartbox.style.height = "50px";
     }
 }
+
+
+
+
+
 
 

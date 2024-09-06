@@ -18,6 +18,13 @@
 
 </head>
 <body>
+  <div id="overlay" class="overlay">
+    <div class="overlay-content">
+      <h2>Welcome to London Tree Canopy</h2>
+      <p>This map shows the canopy cover in London by ward level. Explore the insights page to understand how trees contribute to improving air quality, reducing noise, and enhancing biodiversity in the urban environment.</p>
+      <button id="closeOverlay" class="overlay-button">Get Started</button>
+    </div>
+  </div>
   <!-- top navigation bar -->
   <ul class="topbar">
     <!-- Website name -->
@@ -39,7 +46,9 @@
   <div id="container">
     <div id="map"></div>
     <!-- information bar -->
-    <div id="popup"></div>
+    <div id="popup">
+      <div id="chart-container" style="height: 300px; width: 100%;"></div>
+    </div>
     <!-- echart bar chart -->
     <ul class="sidebar" id="sidebarbox">
       <!-- Hide bar chart -->
@@ -50,8 +59,13 @@
  
     
   </div>
-
-  <script src="js/map.js"></script>
+  <script>
+  // overlay controls
+  document.getElementById('closeOverlay').addEventListener('click', function() {
+      document.getElementById('overlay').style.display = 'none';
+    });
+  </script>  
+  <script src="js/map.js"></script> 
 </body>
 
 
